@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap:100,200,300,400,500,600,700');
 
 
-/*General text font size, color, heading etc. to prevent repeating*/
+/*General text font & size, color, heading etc. to prevent repeating*/
 
 .small-font{
     font-size: 0.75rem;
@@ -15,6 +15,7 @@
     font-size: 2rem;
 }
 
+
 /*Background image*/
 
 html{
@@ -24,4 +25,6 @@ html{
     background-size: cover;
     overflow: hidden;
     height: 100%;
+    color: #00FF7F;
+    font-family: 'Orbitron', sans-serif;
 }
