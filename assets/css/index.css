@@ -11,3 +11,9 @@
     text-align: center;    
     text-transform: uppercase; 
 }
+
+.menu a{
+    color: #00FF7F;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+}
