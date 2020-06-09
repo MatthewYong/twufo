@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap:100,200,300,400,500,600,700');
+
+
+/*General text font size, color, heading etc. to prevent repeating*/
+
+.small-font {
+    font-size: 0.75rem;
+}
+
+.medium-font {
+    font-size: 1.25rem;
+}
+
+.large-font {
+    font-size: 2rem;
+}
