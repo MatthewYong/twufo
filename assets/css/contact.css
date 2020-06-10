@@ -1,0 +1,34 @@
+.instructions{
+    background-color: rgba(25, 25, 25, 0.8);
+    width: 45rem;    
+    height: 26rem;    
+    padding: 2.5rem;
+    margin: auto;
+    margin-top: 12rem;  
+    text-transform: uppercase; 
+}
+
+.instructions-header{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.instructions-text{
+    word-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: left;  
+}
+
+.exit{
+    font-size: 2rem;
+    text-align: right;
+}
+
+.exit a{
+    color: #00FF7F;
+}
+
+.exit a:hover{
+    color:rgba(0, 255, 128, 0.712);
+}
