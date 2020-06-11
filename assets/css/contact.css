@@ -13,8 +13,8 @@
 
 .contact{
     background-color: rgba(25, 25, 25, 0.5);
-    width: 20rem;    
-    height: 26rem;    
+    width: 30rem;    
+    height: 36rem;    
     padding: 2.5rem;
     margin: auto;
     margin-top: 12rem;  
@@ -36,6 +36,23 @@
 
 .text-input{
     color: #00FF7F;
-    background-color: #222;
+    background-color: rgba(25, 25, 25, 0.7);
+    text-align: center;
     text-transform: uppercase;
+    line-height: 2rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 30rem;
 }
+
+.send-button{
+    color: #00FF7F;
+    background-color: 
+}
+
+#message{
+    text-align: left;
+    line-height: 1rem;
+}
+
+
