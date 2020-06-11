@@ -1,11 +1,12 @@
 .contact{
-    background-color: rgba(25, 25, 25, 0.8);
-    width: 45rem;    
+    background-color: rgba(25, 25, 25, 0.5);
+    width: 20rem;    
     height: 26rem;    
     padding: 2.5rem;
     margin: auto;
     margin-top: 12rem;  
     text-transform: uppercase; 
+    text-align: center;
 }
 
 .contact-header{
@@ -17,7 +18,7 @@
 .contact-text{
     word-spacing: 0.1rem;
     line-height: 2rem;
-    text-align: left;  
+    text-align: center;  
 }
 
 .exit{
