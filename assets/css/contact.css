@@ -1,3 +1,16 @@
+.exit{
+    font-size: 2rem;
+    text-align: right;
+}
+
+.exit a{
+    color: #00FF7F;
+}
+
+.exit a:hover{
+    color:rgba(0, 255, 128, 0.712);
+}
+
 .contact{
     background-color: rgba(25, 25, 25, 0.5);
     width: 20rem;    
@@ -21,15 +34,8 @@
     text-align: center;  
 }
 
-.exit{
-    font-size: 2rem;
-    text-align: right;
-}
-
-.exit a{
+.text-input{
     color: #00FF7F;
-}
-
-.exit a:hover{
-    color:rgba(0, 255, 128, 0.712);
+    background-color: #222;
+    text-transform: uppercase;
 }
