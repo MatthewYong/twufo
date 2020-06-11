@@ -46,9 +46,13 @@
 }
 
 .send-button{
+    text-transform: uppercase;
     color: #00FF7F;
-    background-color: 
+    background-color: rgba(25, 25, 25, 0.8);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
+
 
 #message{
     text-align: left;
