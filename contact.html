@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Link to fontawesome icons-->
+	<script src="https://kit.fontawesome.com/5c1546936d.js" crossorigin="anonymous"></script>
+
+	<!--Link to css files-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/instructions.css">
+
+	<title>TWUFO</title>
+
+</head>
+
+<body>
+	<div class="contact">
+		<div class="exit">
+			<a href="index.html">
+				<i class="fas fa-times"></i>
+				<span class="sr-only">exit</span>
+			</a>
+		</div>
+		<div class="contact-header">
+			<p class="lg-font contact-header">Contact</p>
+		</div>
+		<div class="instructions-text">
+			<form action="#contact-link" target="_blank">
+				<label for="fname">First Name*</label>
+				<div>
+					<input class="text-input" type="text" name="first_name" id="fname" required>
+                </div>
+					<label for="lname">Last Name*</label>
+				<div>
+					<input class="text-input" type="text" name="last_name" id="lname" required>
+                </div>
+					<label for="email">Email Address*</label>
+				<div>
+					<input class="text-input" type="email" name="email_address" id="email" required>
+                </div>
+					<label for="message">Message</label>
+				<div>
+					<textarea class="text-input" name="message" rows="10" cols="5" id="message" required></textarea>
+				</div>
+				<input class="send-button" type="submit" value="Send">
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

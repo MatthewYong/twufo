@@ -1,4 +1,4 @@
-.instructions{
+.contact{
     background-color: rgba(25, 25, 25, 0.8);
     width: 45rem;    
     height: 26rem;    
@@ -8,13 +8,13 @@
     text-transform: uppercase; 
 }
 
-.instructions-header{
+.contact-header{
     text-align: center;
     margin-top: 0;
     margin-bottom: 2rem;
 }
 
-.instructions-text{
+.contact-text{
     word-spacing: 0.1rem;
     line-height: 2rem;
     text-align: left;  
