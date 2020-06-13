@@ -22,7 +22,7 @@
 
 /*Background image*/
 
-html{
+html, body{
     background-image: url("../images/image-earth.jpg");
     background-position: center;
     background-repeat: no-repeat;
