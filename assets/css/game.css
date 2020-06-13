@@ -9,3 +9,8 @@
     color: rgb(14, 91, 207);
     font-size: 5rem;
 }
+
+.start-button{
+    color: rgb(14, 91, 207);
+    background-color: rgba(25, 25, 25, 0.5);
+}
