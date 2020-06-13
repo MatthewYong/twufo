@@ -1,6 +1,9 @@
-
-
+.game-header{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .game-symbol{
-
+    color: #fff;
+    font-size: 5rem;
 }
