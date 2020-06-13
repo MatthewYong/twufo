@@ -1,9 +1,11 @@
 .game-header{
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 .game-symbol{
+    text-align: center;
     color: #fff;
     font-size: 5rem;
 }
