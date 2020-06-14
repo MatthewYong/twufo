@@ -1,4 +1,18 @@
+let sequence = [];
+let playerSequence = [];
+let level;
 
-var start = new.start(document.getElementById("start-button"))
+const startButton = document.querySelector("#start")
 
-var rocket = new.rocket(document.getElementById("rocket"))
+
+
+startButton.addEventListener('click', function(){
+    play();
+});
+
+function play()
+
+
+
+
+
