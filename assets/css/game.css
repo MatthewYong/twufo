@@ -10,7 +10,27 @@
     font-size: 5rem;
 }
 
-.start-button{
+#start{
     color: rgb(14, 91, 207);
     background-color: rgba(25, 25, 25, 0.5);
+}
+
+#rocket{
+    color: rgb(218, 167, 26);
+}
+
+#astronaut{
+    color: rgb(236, 90, 90);
+}
+
+#jedi{
+    color: rgb(76, 30, 129);
+}
+
+#robot{
+    color: rgb(37, 202, 92);
+}
+
+#spock{
+    color: rgb(7, 27, 202);
 }
