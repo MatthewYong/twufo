@@ -1,16 +1,42 @@
+/*Variables*/
 let sequence = [];
-let playerSequence = [];
-let level;
+let player = [];
+let iconsArray = [
+    "#rocket",
+    "#astronaut",
+    "#jedi",
+    "#robot",
+    "#spock"
+];
+let score;
 
-const startButton = document.querySelector("#start")
+const startButton = document.querySelector("#start");
+const rocket = document.querySelector("#rocket");
+const astronaut = document.querySelector("#astronaut");
+const jedi = document.querySelector("#jedi");
+const robot = document.querySelector("#robot");
+const spock = document.querySelector("#spock");
 
 
 
-startButton.addEventListener('click', function(){
-    play();
+/*Start button*/
+startButton.addEventListener("click", function(){
+    game();
 });
 
-function play()
+
+
+function game() {
+    sequence = [];
+    player = [];
+    score = 0;
+    
+}
+
+
+
+
+
 
 
 
