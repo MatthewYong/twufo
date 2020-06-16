@@ -1,14 +1,15 @@
 /*Variables*/
-let sequence = [];
-let player = [];
-let iconsArray = [
+var game = {
+computerSequence: [],
+playerSequence: [],
+iconsArray: [
     "#rocket",
     "#astronaut",
     "#jedi",
     "#robot",
     "#spock"
-];
-let score;
+    ],
+};
 
 const startButton = document.querySelector("#start");
 const rocket = document.querySelector("#rocket");
@@ -21,17 +22,36 @@ const spock = document.querySelector("#spock");
 
 /*Start button*/
 startButton.addEventListener("click", function(){
-    game();
+    newGame();
 });
 
 
+/*Starts a new game and resets all the values and continue to function 'level'*/
+function newGame() {
+    computerSequence = [];
+    playerSequence = [];
+    level();
+};
 
-function game() {
-    sequence = [];
-    player = [];
-    score = 0;
-    
+/*Set new level to 1 and continue to function 'randomSequence' */
+function level() {
+    document.getElementById("level").innerText = "1";
+    randomSequence();
 }
+
+/*Function randomly chooses an icon from the array and push it to computerSequence array then continue to function 'iconflash' */
+function randomSequence() {
+    computerSequence.push(Math.floor(Math.random() * iconsArray.length));
+    iconLight();
+};
+
+
+
+/*iconLight will use the pushed icons and light it up*/
+
+
+
+
 
 
 
