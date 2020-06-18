@@ -1,54 +1,67 @@
-/*Variables*/
+//Variables
 var game = {
 computerSequence: [],
 playerSequence: [],
-iconsArray: [
-    "#rocket",
-    "#astronaut",
-    "#jedi",
-    "#robot",
-    "#spock"
-    ],
+level: 0
 };
 
 const startButton = document.querySelector("#start");
-const rocket = document.querySelector("#rocket");
-const astronaut = document.querySelector("#astronaut");
-const jedi = document.querySelector("#jedi");
-const robot = document.querySelector("#robot");
-const spock = document.querySelector("#spock");
 
-
-
-/*Start button*/
+//When START button is clicked a new game starts
 startButton.addEventListener("click", function(){
     newGame();
 });
 
 
-/*Starts a new game and resets all the values and continue to function 'level'*/
+//Resets all the values and continue to function 'round'
 function newGame() {
-    computerSequence = [];
-    playerSequence = [];
-    level();
+    game.computerSequence = [];
+    game.playerSequence = [];
+    round();
 };
 
-/*Set new level to 1 and continue to function 'randomSequence' */
-function level() {
-    document.getElementById("level").innerText = "1";
+//Set increment the level with 1 and continue to function 'randomSequence' 
+function round() {
+    game.level++;
+    $("#level").text(game.level);
     randomSequence();
 }
 
-/*Function randomly chooses an icon from the array and push it to computerSequence array then continue to function 'iconflash' */
+//Randomly chooses a number and pushes into the array of computerSequence then continue to function 'iconflash' 
 function randomSequence() {
-    computerSequence.push(Math.floor(Math.random() * iconsArray.length));
-    iconLight();
+    for (i=0; i < game.level; i++) {
+        game.computerSequence.push(Math.floor(Math.random() * 5));
+    };    
+    console.log(game.computerSequence);
+    computerFlash();
+};
+
+
+function computerFlash() {
+    game.computerSequence.forEach(iconFlash);
 };
 
 
 
-/*iconLight will use the pushed icons and light it up*/
+//This function will access the chosen value in the array and changes the color of the icon
+function iconFlash() {
+    if (game.computerSequence == 0) {
+        rocket.style.color = "white";
+    }
+    if (game.computerSequence == 1) {
+        astronaut.style.color = "white";
+    }
+    if (game.computerSequence == 2) {
+        jedi.style.color = "white";
+    }
+    if (game.computerSequence == 3) {
+        robot.style.color = "white";
+    }
+    if (game.computerSequence == 4) {
+        spock.style.color = "white";
+    }
 
+};
 
 
 
