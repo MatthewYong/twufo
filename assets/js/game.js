@@ -31,14 +31,17 @@ function round() {
 function randomSequence() {
     for (i=0; i < game.level; i++) {
         game.computerSequence.push(Math.floor(Math.random() * 5));
-    };    
+    };
+    for (i=0; i < game.computerSequence.length; i++) {  
+        iconFlash(i);
+    };
     console.log(game.computerSequence);
-    setInterval(computerFlash, 2000);
-};
+};    
+      
 
-
-function computerFlash() {
-    for (i=0; i < game.computerSequence.length; i++) {    
+//This function will access the chosen value in the array and changes the color of the icon
+function iconFlash (i) {
+    setTimeout(function() {
                 if (game.computerSequence[i] == 0) {
                     rocket.style.color = "white";
                     setTimeout(function() {
@@ -64,42 +67,12 @@ function computerFlash() {
                     setTimeout(function() {
                         spock.style.color = ""}, 800)
                 };  
-        };
+    },1500*i) 
 };
 
 
 
 
-//This function will access the chosen value in the array and changes the color of the icon
-/*function iconFlash() {
-    if (game.computerSequence == 0) {
-        rocket.style.color = "white";
-        setTimeout(function() {
-            rocket.style.color = ""}, 800)
-    }
-    if (game.computerSequence == 1) {
-        astronaut.style.color = "white";
-        setTimeout(function() {
-            astronaut.style.color = ""}, 800)
-    }
-    if (game.computerSequence == 2) {
-        jedi.style.color = "white";
-        setTimeout(function() {
-            jedi.style.color = ""}, 800)
-    }
-    if (game.computerSequence == 3) {
-        robot.style.color = "white";
-        setTimeout(function() {
-            robot.style.color = ""}, 800)
-    }
-    if (game.computerSequence == 4) {
-        spock.style.color = "white";
-        setTimeout(function() {
-            rocket.style.color = ""}, 800)
-    }
-
-};
-*/
 
 
 
