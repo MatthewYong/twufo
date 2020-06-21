@@ -42,26 +42,27 @@ function computerTurn() {
     };
     console.log(game.computerSequence);
 };    
-      
+
 //This function will access each value in the array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
 function iconFlash (i) {
     setTimeout(function() {
-                if (game.computerSequence[i] == 0) {
-                    iconOne();
-                };
-                if (game.computerSequence[i] == 1) {
-                    iconTwo();
-                };
-                if (game.computerSequence[i] == 2) {
-                    iconThree();
-                };
-                if (game.computerSequence[i] == 3) {
-                   iconFour();
-                };
-                if (game.computerSequence[i] == 4) {
-                   iconFive();
-                };  
-    },1500*i); 
+        if (game.computerSequence[i] == 0) {
+            iconOne();
+        };
+        if (game.computerSequence[i] == 1) {
+            iconTwo();
+        };
+        if (game.computerSequence[i] == 2) {
+            iconThree();
+        };
+        if (game.computerSequence[i] == 3) {
+            iconFour();
+        };
+        if (game.computerSequence[i] == 4) {
+            iconFive();
+        };
+        playerTurn();            
+    },1500*i);
 };
 
 
@@ -93,18 +94,21 @@ function playerTurn() {
 
     spock.onclick = function() {
     game.playerSequence.push(4);
-    console.log(game.playerSequence)
     iconFive();
     console.log(game.playerSequence)
     };
 };
 
-playerTurn()
 
-//Compare if array of playerTurn and computerTurn are equal. If equal, continue to next 'round'. If not equal, then restart new game
+//Compare if array of playerTurn and computerTurn are equal. If equal, continue to next 'round'. If not equal, then restart new game through button
 
-
-
+function compareSequence() {
+    if (game.computerSequence.length == game.playerSequence.length) {
+        console.log("Good job");
+    } else {
+        console.log("Try again")
+    };
+};
 
 
 
