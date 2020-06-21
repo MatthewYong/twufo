@@ -18,21 +18,21 @@ startButton.addEventListener("click", function(){
 });
 
 
-//Resets all the values and continue to function 'round'
+//Resets all the values and calls function 'round'
 function newGame() {
     game.computerSequence = [];
     game.playerSequence = [];
     round();
 };
 
-//Increment the text and level by +1 and continue to function 'randomSequence' 
+//Increment the text and level by +1 and calls function 'randomSequence' 
 function round() {
     game.level++;
     $("#level").text(game.level);
     randomSequence();
 }
 
-//Randomly chooses a number and pushes into the array of computerSequence then continue to function 'iconflash' 
+//Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
 function randomSequence() {
     for (i=0; i < game.level; i++) {
         game.computerSequence.push(Math.floor(Math.random() * 5));
@@ -61,19 +61,48 @@ function iconFlash (i) {
                 if (game.computerSequence[i] == 4) {
                    iconFive();
                 };  
-    },1500*i) 
+    },1500*i); 
 };
 
 
-rocket.onclick = function() {
-    rocket.style.color = "white";
-    setTimeout(function() {
-    rocket.style.color = ""}, 800)
+//When icons are clicked, push to playerSequence array and flash icon
+function playerTurn() {
+    rocket.onclick = function() {
+    game.playerSequence.push(0);
+    iconOne();
+    console.log(game.playerSequence)
+    };
+
+    astronaut.onclick = function() {
+    game.playerSequence.push(1);
+    console.log(game.playerSequence)
+    iconTwo();
+    };
+
+    jedi.onclick = function() {
+    game.playerSequence.push(2);
+    console.log(game.playerSequence)
+    iconThree();
+    };
+
+    robot.onclick = function() {
+    game.playerSequence.push(3);
+    console.log(game.playerSequence)
+    iconFour();
+    };
+
+    spock.onclick = function() {
+    game.playerSequence.push(4);
+    console.log(game.playerSequence)
+    iconFive();
+    console.log(game.playerSequence)
+    };
 };
 
+playerTurn()
 
 
-//Functions that tells the icons to flash
+//Functions that executes the icons to flash
 function iconOne() {
     rocket.style.color = "white";
     setTimeout(function() {
