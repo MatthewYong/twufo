@@ -25,15 +25,15 @@ function newGame() {
     round();
 };
 
-//Increment the text and level by +1 and calls function 'randomSequence' 
+//Increment the text and level by +1 and calls function 'computerTurn' 
 function round() {
     game.level++;
     $("#level").text(game.level);
-    randomSequence();
-}
+    computerTurn();
+};
 
 //Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
-function randomSequence() {
+function computerTurn() {
     for (i=0; i < game.level; i++) {
         game.computerSequence.push(Math.floor(Math.random() * 5));
     };
@@ -43,7 +43,7 @@ function randomSequence() {
     console.log(game.computerSequence);
 };    
       
-//This function will access each value in the array and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
+//This function will access each value in the array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
 function iconFlash (i) {
     setTimeout(function() {
                 if (game.computerSequence[i] == 0) {
@@ -100,6 +100,13 @@ function playerTurn() {
 };
 
 playerTurn()
+
+//Compare if array of playerTurn and computerTurn are equal. If equal, continue to next 'round'. If not equal, then restart new game
+
+
+
+
+
 
 
 //Functions that executes the icons to flash
