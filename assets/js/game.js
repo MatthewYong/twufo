@@ -6,6 +6,11 @@ level: 0
 };
 
 const startButton = document.querySelector("#start");
+const rocket = document.querySelector("#rocket");
+const astronaut = document.querySelector("#astronaut");
+const jedi = document.querySelector("#jedi");
+const robot = document.querySelector("#robot");
+const spock = document.querySelector("#spock");
 
 //When START button is clicked a new game starts
 startButton.addEventListener("click", function(){
@@ -38,39 +43,66 @@ function randomSequence() {
     console.log(game.computerSequence);
 };    
       
-
-//This function will access the chosen value in the array and changes the color of the icon
+//This function will access each value in the array and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
 function iconFlash (i) {
     setTimeout(function() {
                 if (game.computerSequence[i] == 0) {
-                    rocket.style.color = "white";
-                    setTimeout(function() {
-                        rocket.style.color = ""}, 800)
+                    iconOne();
                 };
                 if (game.computerSequence[i] == 1) {
-                    astronaut.style.color = "white";
-                    setTimeout(function() {
-                        astronaut.style.color = ""}, 800)
+                    iconTwo();
                 };
                 if (game.computerSequence[i] == 2) {
-                    jedi.style.color = "white";
-                    setTimeout(function() {
-                        jedi.style.color = ""}, 800)
+                    iconThree();
                 };
                 if (game.computerSequence[i] == 3) {
-                    robot.style.color = "white";
-                    setTimeout(function() {
-                        robot.style.color = ""}, 800)
+                   iconFour();
                 };
                 if (game.computerSequence[i] == 4) {
-                    spock.style.color = "white";
-                    setTimeout(function() {
-                        spock.style.color = ""}, 800)
+                   iconFive();
                 };  
     },1500*i) 
 };
 
 
+rocket.onclick = function() {
+    rocket.style.color = "white";
+    setTimeout(function() {
+    rocket.style.color = ""}, 800)
+};
+
+
+
+//Functions that tells the icons to flash
+function iconOne() {
+    rocket.style.color = "white";
+    setTimeout(function() {
+        rocket.style.color = ""}, 800)
+    };
+
+function iconTwo() {
+    astronaut.style.color = "white";
+    setTimeout(function() {
+        astronaut.style.color = ""}, 800)
+    };
+
+function iconThree() {
+    jedi.style.color = "white";
+    setTimeout(function() {
+        jedi.style.color = ""}, 800)
+    };
+
+function iconFour() {
+    robot.style.color = "white";
+    setTimeout(function() {
+        robot.style.color = ""}, 800)
+    };
+
+function iconFive() {
+    spock.style.color = "white";
+    setTimeout(function() {
+        spock.style.color = ""}, 800)
+    };
 
 
 
