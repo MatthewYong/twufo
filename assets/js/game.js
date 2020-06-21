@@ -20,7 +20,7 @@ function newGame() {
     round();
 };
 
-//Set increment the level with 1 and continue to function 'randomSequence' 
+//Increment the text and level by +1 and continue to function 'randomSequence' 
 function round() {
     game.level++;
     $("#level").text(game.level);
@@ -33,36 +33,73 @@ function randomSequence() {
         game.computerSequence.push(Math.floor(Math.random() * 5));
     };    
     console.log(game.computerSequence);
-    computerFlash();
+    setInterval(computerFlash, 2000);
 };
 
 
 function computerFlash() {
-    game.computerSequence.forEach(iconFlash);
+    for (i=0; i < game.computerSequence.length; i++) {    
+                if (game.computerSequence[i] == 0) {
+                    rocket.style.color = "white";
+                    setTimeout(function() {
+                        rocket.style.color = ""}, 800)
+                };
+                if (game.computerSequence[i] == 1) {
+                    astronaut.style.color = "white";
+                    setTimeout(function() {
+                        astronaut.style.color = ""}, 800)
+                };
+                if (game.computerSequence[i] == 2) {
+                    jedi.style.color = "white";
+                    setTimeout(function() {
+                        jedi.style.color = ""}, 800)
+                };
+                if (game.computerSequence[i] == 3) {
+                    robot.style.color = "white";
+                    setTimeout(function() {
+                        robot.style.color = ""}, 800)
+                };
+                if (game.computerSequence[i] == 4) {
+                    spock.style.color = "white";
+                    setTimeout(function() {
+                        spock.style.color = ""}, 800)
+                };  
+        };
 };
+
 
 
 
 //This function will access the chosen value in the array and changes the color of the icon
-function iconFlash() {
+/*function iconFlash() {
     if (game.computerSequence == 0) {
         rocket.style.color = "white";
+        setTimeout(function() {
+            rocket.style.color = ""}, 800)
     }
     if (game.computerSequence == 1) {
         astronaut.style.color = "white";
+        setTimeout(function() {
+            astronaut.style.color = ""}, 800)
     }
     if (game.computerSequence == 2) {
         jedi.style.color = "white";
+        setTimeout(function() {
+            jedi.style.color = ""}, 800)
     }
     if (game.computerSequence == 3) {
         robot.style.color = "white";
+        setTimeout(function() {
+            robot.style.color = ""}, 800)
     }
     if (game.computerSequence == 4) {
         spock.style.color = "white";
+        setTimeout(function() {
+            rocket.style.color = ""}, 800)
     }
 
 };
-
+*/
 
 
 
