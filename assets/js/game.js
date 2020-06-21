@@ -2,6 +2,7 @@
 var game = {
 computerSequence: [],
 playerSequence: [],
+runningSequence: [],
 level: 0
 };
 
@@ -22,6 +23,7 @@ startButton.addEventListener("click", function(){
 function newGame() {
     game.computerSequence = [];
     game.playerSequence = [];
+    game.runningSequence = [];
     round();
 };
 
@@ -47,66 +49,76 @@ function computerTurn() {
 function iconFlash (i) {
     setTimeout(function() {
         if (game.computerSequence[i] == 0) {
+            game.runningSequence.push(i);
             iconOne();
         };
         if (game.computerSequence[i] == 1) {
+            game.runningSequence.push(i);
             iconTwo();
         };
         if (game.computerSequence[i] == 2) {
+            game.runningSequence.push(i);
             iconThree();
         };
         if (game.computerSequence[i] == 3) {
+            game.runningSequence.push(i);
             iconFour();
         };
         if (game.computerSequence[i] == 4) {
+            game.runningSequence.push(i);
             iconFive();
         };
-        playerTurn();            
+        //Only if length are equal, player can start to select the icons
+        if (game.runningSequence.length == game.computerSequence.length) {
+            playerTurn();
+        };        
     },1500*i);
 };
 
-
 //When icons are clicked, push to playerSequence array and flash icon
 function playerTurn() {
-    rocket.onclick = function() {
-    game.playerSequence.push(0);
-    iconOne();
-    console.log(game.playerSequence)
-    };
+        rocket.onclick = function() {
+        game.playerSequence.push(0);
+        iconOne();
+        compareSequence();
+        console.log(game.playerSequence)
+        };
 
-    astronaut.onclick = function() {
-    game.playerSequence.push(1);
-    console.log(game.playerSequence)
-    iconTwo();
-    };
+        astronaut.onclick = function() {
+        game.playerSequence.push(1);        
+        iconTwo();
+        compareSequence();
+        console.log(game.playerSequence)
+        };
 
-    jedi.onclick = function() {
-    game.playerSequence.push(2);
-    console.log(game.playerSequence)
-    iconThree();
-    };
+        jedi.onclick = function() {
+        game.playerSequence.push(2);
+        iconThree();
+        compareSequence();
+        console.log(game.playerSequence)
+        };
 
-    robot.onclick = function() {
-    game.playerSequence.push(3);
-    console.log(game.playerSequence)
-    iconFour();
-    };
+        robot.onclick = function() {
+        game.playerSequence.push(3);
+        iconFour();
+        compareSequence();
+        console.log(game.playerSequence)
+        };
 
-    spock.onclick = function() {
-    game.playerSequence.push(4);
-    iconFive();
-    console.log(game.playerSequence)
-    };
+        spock.onclick = function() {
+        game.playerSequence.push(4);
+        iconFive();
+        compareSequence();
+        console.log(game.playerSequence)
+        };
 };
 
 
 //Compare if array of playerTurn and computerTurn are equal. If equal, continue to next 'round'. If not equal, then restart new game through button
 
 function compareSequence() {
-    if (game.computerSequence.length == game.playerSequence.length) {
-        console.log("Good job");
-    } else {
-        console.log("Try again")
+    if (game.playerSequence.length == game.computerSequence.length) {
+        console.log("Good job")
     };
 };
 
