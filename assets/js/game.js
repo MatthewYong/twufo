@@ -75,7 +75,7 @@ function iconFlash (i) {
     },1500*i);
 };
 
-//When icons are clicked, push to playerSequence array and flash icon
+//When icons are clicked, push to playerSequence array, flash icon and compare playerSequence with computerSequence
 function playerTurn() {
         rocket.onclick = function() {
         game.playerSequence.push(0);
@@ -114,14 +114,20 @@ function playerTurn() {
 };
 
 
-//Compare if array of playerTurn and computerTurn are equal. If equal, continue to next 'round'. If not equal, then restart new game through button
+//Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are equal in the same order. If equal, continue to next 'round'. If not equal, then restart new game through button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
 
 function compareSequence() {
-    if (game.playerSequence.length == game.computerSequence.length) {
-        console.log("Good job")
-    };
-};
+    if(game.computerSequence.length == game.playerSequence.length) {
+        if (game.computerSequence.toString() == game.playerSequence.toString()) {
+            console.log("good");
+            
 
+        } else {
+            console.log("wrong");
+
+        };
+    };    
+};
 
 
 
