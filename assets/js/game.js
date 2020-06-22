@@ -13,11 +13,11 @@ const jedi = document.querySelector("#jedi");
 const robot = document.querySelector("#robot");
 const spock = document.querySelector("#spock");
 
-//When START button is clicked a new game starts
-startButton.addEventListener("click", function(){
+//When START button is clicked: start new game
+$("#start").click(function() {
     newGame();
+    $("#start").addClass("hide-button");
 });
-
 
 //Resets all the values and calls function 'round'
 function newGame() {
@@ -120,7 +120,7 @@ function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
         if (game.computerSequence.toString() == game.playerSequence.toString()) {
             console.log("good");
-            
+
 
         } else {
             console.log("wrong");

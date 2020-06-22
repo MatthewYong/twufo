@@ -10,6 +10,10 @@
     font-size: 5rem;
 }
 
+.hide-button{
+    display: none;
+}
+
 #start, #continue, #retry{
     color: rgb(14, 91, 207);
     background-color: rgba(25, 25, 25, 0.5);
