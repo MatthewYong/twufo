@@ -13,7 +13,7 @@ const jedi = document.querySelector("#jedi");
 const robot = document.querySelector("#robot");
 const spock = document.querySelector("#spock");
 
-//When START button is clicked: start new game
+//When START button is clicked: start a new game
 $("#start").click(function() {
     newGame();
     $("#start").addClass("hide-button");
@@ -120,14 +120,30 @@ function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
         if (game.computerSequence.toString() == game.playerSequence.toString()) {
             console.log("good");
-
+            $("#continue").removeClass("hide-button");
+            continueButton();
 
         } else {
             console.log("wrong");
+            $("#retry").removeClass("hide-button");
 
         };
     };    
 };
+
+function continueButton() {
+    $("#continue").click(function() {
+        game.computerSequence = [];
+        game.playerSequence = [];
+        game.runningSequence = [];
+        round();
+    });
+};
+
+
+
+
+
 
 
 
