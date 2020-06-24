@@ -34,7 +34,7 @@ function newGame() {
 //Increment the text and level by 1 and calls function 'computerTurn' 
 function round() {
     game.level++;
-    $("#level").text(game.level);    
+    $("#level").text("Level" + " " + game.level);    
     computerTurn();
 };
 
@@ -152,7 +152,7 @@ function retryButton() {
     $("#retry").click(function() {
         $("#retry").addClass("hide-button");
         $("#start").removeClass("hide-button");
-        $("#level").text("0");
+        $("#level").text("Level 0");
     });
 };
 
