@@ -3,9 +3,11 @@ var game = {
 computerSequence: [],
 playerSequence: [],
 runningSequence: [],
-level: 0
+level: 0,
+round: 0
 };
 
+//Constants that targets the icons in game.html
 const startButton = document.querySelector("#start");
 const rocket = document.querySelector("#rocket");
 const astronaut = document.querySelector("#astronaut");
@@ -13,10 +15,10 @@ const jedi = document.querySelector("#jedi");
 const robot = document.querySelector("#robot");
 const spock = document.querySelector("#spock");
 
-//When START button is clicked: start a new game
+//When START button is clicked: start a new game by calling
 $("#start").click(function() {
     newGame();
-    $("#start").addClass("hide-button");
+    //$("#start").addClass("hide-button");
 });
 
 //Resets all the values and calls function 'round'
@@ -24,19 +26,22 @@ function newGame() {
     game.computerSequence = [];
     game.playerSequence = [];
     game.runningSequence = [];
+    game.round = 1;
+    game.level = 0;
     round();
 };
 
-//Increment the text and level by +1 and calls function 'computerTurn' 
+//Increment the text and level by 1 and calls function 'computerTurn' 
 function round() {
+    $("#continue").unbind();
     game.level++;
-    $("#level").text(game.level);
+    $("#level").text(game.level);    
     computerTurn();
 };
 
 //Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
 function computerTurn() {
-    for (i=0; i < game.level; i++) {
+    for (i=0; i < game.round; i++) {
         game.computerSequence.push(Math.floor(Math.random() * 5));
     };
     for (i=0; i < game.computerSequence.length; i++) {  
@@ -45,7 +50,7 @@ function computerTurn() {
     console.log(game.computerSequence);
 };    
 
-//This function will access each value in the array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
+//This function will access each value in the computerSequence array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
 function iconFlash (i) {
     setTimeout(function() {
         if (game.computerSequence[i] == 0) {
@@ -75,7 +80,7 @@ function iconFlash (i) {
     },1500*i);
 };
 
-//When icons are clicked, push to playerSequence array, flash icon and compare playerSequence with computerSequence
+//When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
         rocket.onclick = function() {
         game.playerSequence.push(0);
@@ -114,33 +119,42 @@ function playerTurn() {
 };
 
 
-//Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are equal in the same order. If equal, continue to next 'round'. If not equal, then restart new game through button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
+//Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
 
 function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
         if (game.computerSequence.toString() == game.playerSequence.toString()) {
             console.log("good");
+            $("#continue").bind();
             $("#continue").removeClass("hide-button");
             continueButton();
 
         } else {
             console.log("wrong");
             $("#retry").removeClass("hide-button");
-
+            retryButton();
         };
     };    
 };
 
+//When CONTINUE button is clicked, increment the level by 1
 function continueButton() {
     $("#continue").click(function() {
-        game.computerSequence = [];
+        //$("#continue").addClass("hide-button");
         game.playerSequence = [];
         game.runningSequence = [];
         round();
     });
 };
 
-
+//When RETRY button is clicked, start a new game
+function retryButton() {
+    $("#retry").click(function() {
+        $("#retry").addClass("hide-button");
+        $("#start").removeClass("hide-button");
+        $("#level").text("0");
+    });
+};
 
 
 
