@@ -26,13 +26,12 @@ function newGame() {
     game.playerSequence = [];
     game.runningSequence = [];
     game.round = 1;
-    game.level = 0;
+    game.level = 1;
     round();
 };
 
 //Increment the text and level by 1 and calls function 'computerTurn' 
 function round() {
-    game.level++;
     $("#level").text("Level" + " " + game.level);    
     computerTurn();
 };
@@ -80,41 +79,40 @@ function iconFlash (i) {
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
-    rocket.onclick = function() {
-    game.playerSequence.push(0);
-    iconOne();
-    compareSequence();
-    console.log(game.playerSequence)
-    };
+    $("#rocket").click(function() {
+        game.playerSequence.push(0);
+        iconOne();
+        compareSequence();
+        console.log(game.playerSequence)
+    });
 
-    astronaut.onclick = function() {
-    game.playerSequence.push(1);        
-    iconTwo();
-    compareSequence();
-    console.log(game.playerSequence)
-    };
+    $("#astronaut").click(function() {
+        game.playerSequence.push(1);        
+        iconTwo();
+        compareSequence();
+        console.log(game.playerSequence)
+    });
 
-    jedi.onclick = function() {
-    game.playerSequence.push(2);
-    iconThree();
-    compareSequence();
-    console.log(game.playerSequence)
-    };
+    $("#jedi").click(function() {
+        game.playerSequence.push(2);
+        iconThree();
+        compareSequence();
+        console.log(game.playerSequence)
+    });
 
-    robot.onclick = function() {
-    game.playerSequence.push(3);
-    iconFour();
-    compareSequence();
-    console.log(game.playerSequence)
-    };
+   $("#robot").click(function() {
+        game.playerSequence.push(3);
+        iconFour();
+        compareSequence();
+        console.log(game.playerSequence)
+    });
 
-    spock.onclick = function() {
-    game.playerSequence.push(4);
-    iconFive();
-    compareSequence();
-    console.log(game.playerSequence)
-    };
-
+    $("#spock").click(function() {
+        game.playerSequence.push(4);
+        iconFive();
+        compareSequence();
+        console.log(game.playerSequence)
+    });
 };
 
 
@@ -132,6 +130,8 @@ function compareSequence() {
             $("#retry").removeClass("hide-button");
             retryButton();
         };
+        //This prevents the player from clicking while the computerSequence is running
+        $(".game-symbol").unbind();
     };    
 };
 
@@ -142,6 +142,7 @@ function continueButton() {
         $("#continue").unbind();
         game.playerSequence = [];
         game.runningSequence = [];
+        game.level++;
         round();
     });
 };
