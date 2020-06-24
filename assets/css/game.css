@@ -4,7 +4,11 @@
 
 .buttons{
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 0rem;
+}
+
+.volume{
+    text-align: center;
 }
 
 .game-symbol{
@@ -22,7 +26,7 @@
     padding-top: 10rem;
 }
 
-#start, #continue, #retry{
+#start, #continue, #retry, #back{
     color: rgb(30, 151, 231);
     background-color: rgba(25, 25, 25, 0.7);
 }
