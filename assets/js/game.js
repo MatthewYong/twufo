@@ -18,7 +18,7 @@ const spock = document.querySelector("#spock");
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
     newGame();
-    //$("#start").addClass("hide-button");
+    $("#start").addClass("hide-button");
 });
 
 //Resets all the values and calls function 'round'
@@ -33,7 +33,6 @@ function newGame() {
 
 //Increment the text and level by 1 and calls function 'computerTurn' 
 function round() {
-    $("#continue").unbind();
     game.level++;
     $("#level").text(game.level);    
     computerTurn();
@@ -77,45 +76,46 @@ function iconFlash (i) {
         if (game.runningSequence.length == game.computerSequence.length) {
             playerTurn();
         };        
-    },1500*i);
+    },1200*i);
 };
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
-        rocket.onclick = function() {
-        game.playerSequence.push(0);
-        iconOne();
-        compareSequence();
-        console.log(game.playerSequence)
-        };
+    rocket.onclick = function() {
+    game.playerSequence.push(0);
+    iconOne();
+    compareSequence();
+    console.log(game.playerSequence)
+    };
 
-        astronaut.onclick = function() {
-        game.playerSequence.push(1);        
-        iconTwo();
-        compareSequence();
-        console.log(game.playerSequence)
-        };
+    astronaut.onclick = function() {
+    game.playerSequence.push(1);        
+    iconTwo();
+    compareSequence();
+    console.log(game.playerSequence)
+    };
 
-        jedi.onclick = function() {
-        game.playerSequence.push(2);
-        iconThree();
-        compareSequence();
-        console.log(game.playerSequence)
-        };
+    jedi.onclick = function() {
+    game.playerSequence.push(2);
+    iconThree();
+    compareSequence();
+    console.log(game.playerSequence)
+    };
 
-        robot.onclick = function() {
-        game.playerSequence.push(3);
-        iconFour();
-        compareSequence();
-        console.log(game.playerSequence)
-        };
+    robot.onclick = function() {
+    game.playerSequence.push(3);
+    iconFour();
+    compareSequence();
+    console.log(game.playerSequence)
+    };
 
-        spock.onclick = function() {
-        game.playerSequence.push(4);
-        iconFive();
-        compareSequence();
-        console.log(game.playerSequence)
-        };
+    spock.onclick = function() {
+    game.playerSequence.push(4);
+    iconFive();
+    compareSequence();
+    console.log(game.playerSequence)
+    };
+
 };
 
 
@@ -125,7 +125,6 @@ function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
         if (game.computerSequence.toString() == game.playerSequence.toString()) {
             console.log("good");
-            $("#continue").bind();
             $("#continue").removeClass("hide-button");
             continueButton();
 
@@ -137,10 +136,11 @@ function compareSequence() {
     };    
 };
 
-//When CONTINUE button is clicked, increment the level by 1
+//When CONTINUE button is clicked, increment the level by 1 and reset the button by unbind function
 function continueButton() {
     $("#continue").click(function() {
-        //$("#continue").addClass("hide-button");
+        $("#continue").addClass("hide-button");
+        $("#continue").unbind();
         game.playerSequence = [];
         game.runningSequence = [];
         round();
@@ -165,31 +165,31 @@ function retryButton() {
 function iconOne() {
     rocket.style.color = "white";
     setTimeout(function() {
-        rocket.style.color = ""}, 800)
+        rocket.style.color = ""}, 500)
     };
 
 function iconTwo() {
     astronaut.style.color = "white";
     setTimeout(function() {
-        astronaut.style.color = ""}, 800)
+        astronaut.style.color = ""}, 500)
     };
 
 function iconThree() {
     jedi.style.color = "white";
     setTimeout(function() {
-        jedi.style.color = ""}, 800)
+        jedi.style.color = ""}, 500)
     };
 
 function iconFour() {
     robot.style.color = "white";
     setTimeout(function() {
-        robot.style.color = ""}, 800)
+        robot.style.color = ""}, 500)
     };
 
 function iconFive() {
     spock.style.color = "white";
     setTimeout(function() {
-        spock.style.color = ""}, 800)
+        spock.style.color = ""}, 500)
     };
 
 
