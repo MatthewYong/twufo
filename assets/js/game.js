@@ -8,7 +8,6 @@ round: 0
 };
 
 //Constants that targets the icons in game.html
-const startButton = document.querySelector("#start");
 const rocket = document.querySelector("#rocket");
 const astronaut = document.querySelector("#astronaut");
 const jedi = document.querySelector("#jedi");

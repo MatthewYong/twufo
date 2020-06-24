@@ -2,7 +2,7 @@
     padding-top: 10rem;
 }
 
-.game-header{
+.buttons{
     text-align: center;
     padding-top: 5rem;
 }
@@ -23,8 +23,8 @@
 }
 
 #start, #continue, #retry{
-    color: rgb(14, 91, 207);
-    background-color: rgba(25, 25, 25, 0.5);
+    color: rgb(30, 151, 231);
+    background-color: rgba(25, 25, 25, 0.7);
 }
 
 #rocket{
