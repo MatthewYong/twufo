@@ -163,31 +163,31 @@ function retryButton() {
 
 //Functions that executes the icons to flash
 function iconOne() {
-    rocket.style.color = "white";
+    rocket.style.color = "rgb(239, 243, 28)";
     setTimeout(function() {
         rocket.style.color = ""}, 500)
     };
 
 function iconTwo() {
-    astronaut.style.color = "white";
+    astronaut.style.color = "rgb(250, 184, 172)";
     setTimeout(function() {
         astronaut.style.color = ""}, 500)
     };
 
 function iconThree() {
-    jedi.style.color = "white";
+    jedi.style.color = "rgb(197, 148, 252)";
     setTimeout(function() {
         jedi.style.color = ""}, 500)
     };
 
 function iconFour() {
-    robot.style.color = "white";
+    robot.style.color = "rgb(101, 241, 148)";
     setTimeout(function() {
         robot.style.color = ""}, 500)
     };
 
 function iconFive() {
-    spock.style.color = "white";
+    spock.style.color = "rgb(113, 215, 255)";
     setTimeout(function() {
         spock.style.color = ""}, 500)
     };
