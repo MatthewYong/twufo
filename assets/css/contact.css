@@ -13,11 +13,11 @@
 
 .contact{
     background-color: rgba(25, 25, 25, 0.5);
-    width: 32rem;    
-    height: 36rem;    
+    width: 40rem;    
+    height: 48rem;    
     padding: 2.5rem;
     margin: auto;
-    margin-top: 12rem;  
+    margin-top: 5rem;  
     text-transform: uppercase; 
     text-align: center;
 }
