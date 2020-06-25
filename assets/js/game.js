@@ -79,6 +79,10 @@ function iconFlash (i) {
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
+    $(".game-symbol").on("click", function() {
+        $(this).toggleClass("rotate");
+    });
+
     $("#rocket").click(function() {
         game.playerSequence.push(0);
         iconOne();
@@ -157,13 +161,10 @@ function retryButton() {
 };
 
 
-
-
-
-
 //Functions that executes the icons to flash
 function iconOne() {
     rocket.style.color = "rgb(239, 243, 28)";
+    rocket.classList.add(".select")
     setTimeout(function() {
         rocket.style.color = ""}, 500)
     };
