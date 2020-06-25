@@ -80,9 +80,17 @@ function iconFlash (i) {
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
     $(".game-symbol").on("click", function() {
-        $(this).toggleClass("rotate");
+        $(this).addClass("rotate"); 
+        setTimeout(function() {
+        $(".game-symbol").removeClass("rotate")}, 1000)      
     });
 
+     $(".fas").on("click", function() { 
+        $(this).addClass("icon-effect"); 
+        setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 1000)
+    });       
+  
     $("#rocket").click(function() {
         game.playerSequence.push(0);
         iconOne();
@@ -142,6 +150,7 @@ function compareSequence() {
 //When CONTINUE button is clicked, increment the level by 1 and reset the button by unbind function
 function continueButton() {
     $("#continue").click(function() {
+        $(".game-symbol").removeClass("rotate");
         $("#continue").addClass("hide-button");
         $("#continue").unbind();
         game.playerSequence = [];
@@ -159,6 +168,7 @@ function retryButton() {
         $("#level").text("Level 0");
     });
 };
+
 
 
 //Functions that executes the icons to flash
