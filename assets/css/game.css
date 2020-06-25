@@ -11,6 +11,7 @@
     text-align: center;
     color: rgb(14, 91, 207);
     font-size: 5rem;
+    cursor: pointer;
 }
 
 .hide-button{
