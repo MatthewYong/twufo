@@ -82,11 +82,7 @@ function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate"); 
         setTimeout(function() {
-        $(".game-symbol").removeClass("rotate")}, 800);
-        
-        $("i", this).addClass("icon-effect"); 
-            setTimeout(function() {
-            $(".fas").removeClass("icon-effect")}, 800);         
+        $(".game-symbol").removeClass("rotate")}, 500);   
     });  
   
     $("#rocket").click(function() {
@@ -172,31 +168,46 @@ function retryButton() {
 function iconOne() {
     rocket.style.color = "rgb(239, 243, 28)";    
     setTimeout(function() {
-        rocket.style.color = ""}, 500);  
+        rocket.style.color = ""}, 500);
+    $(".icon-rocket").addClass("icon-effect"); 
+    setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 500);    
     };
 
 function iconTwo() {
     astronaut.style.color = "rgb(250, 184, 172)";
     setTimeout(function() {
         astronaut.style.color = ""}, 500);
+    $(".icon-astronaut").addClass("icon-effect"); 
+    setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 500); 
     };
 
 function iconThree() {
     jedi.style.color = "rgb(197, 148, 252)";
     setTimeout(function() {
         jedi.style.color = ""}, 500);
+    $(".icon-jedi").addClass("icon-effect"); 
+    setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 500); 
     };
 
 function iconFour() {
     robot.style.color = "rgb(101, 241, 148)";
     setTimeout(function() {
         robot.style.color = ""}, 500);
+    $(".icon-robot").addClass("icon-effect"); 
+    setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 500); 
     };
 
 function iconFive() {
     spock.style.color = "rgb(113, 215, 255)";
     setTimeout(function() {
         spock.style.color = ""}, 500);
+    $(".icon-spock").addClass("icon-effect"); 
+    setTimeout(function() {
+        $(".fas").removeClass("icon-effect")}, 500); 
     };
 
 
