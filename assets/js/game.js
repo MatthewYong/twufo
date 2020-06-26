@@ -82,14 +82,12 @@ function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate"); 
         setTimeout(function() {
-        $(".game-symbol").removeClass("rotate")}, 1000)      
-    });
-
-     $(".fas").on("click", function() { 
-        $(this).addClass("icon-effect"); 
-        setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 1000)
-    });       
+        $(".game-symbol").removeClass("rotate")}, 800);
+        
+        $("i", this).addClass("icon-effect"); 
+            setTimeout(function() {
+            $(".fas").removeClass("icon-effect")}, 800);         
+    });  
   
     $("#rocket").click(function() {
         game.playerSequence.push(0);
@@ -150,7 +148,6 @@ function compareSequence() {
 //When CONTINUE button is clicked, increment the level by 1 and reset the button by unbind function
 function continueButton() {
     $("#continue").click(function() {
-        $(".game-symbol").removeClass("rotate");
         $("#continue").addClass("hide-button");
         $("#continue").unbind();
         game.playerSequence = [];
@@ -173,34 +170,33 @@ function retryButton() {
 
 //Functions that executes the icons to flash
 function iconOne() {
-    rocket.style.color = "rgb(239, 243, 28)";
-    rocket.classList.add(".select")
+    rocket.style.color = "rgb(239, 243, 28)";    
     setTimeout(function() {
-        rocket.style.color = ""}, 500)
+        rocket.style.color = ""}, 500);  
     };
 
 function iconTwo() {
     astronaut.style.color = "rgb(250, 184, 172)";
     setTimeout(function() {
-        astronaut.style.color = ""}, 500)
+        astronaut.style.color = ""}, 500);
     };
 
 function iconThree() {
     jedi.style.color = "rgb(197, 148, 252)";
     setTimeout(function() {
-        jedi.style.color = ""}, 500)
+        jedi.style.color = ""}, 500);
     };
 
 function iconFour() {
     robot.style.color = "rgb(101, 241, 148)";
     setTimeout(function() {
-        robot.style.color = ""}, 500)
+        robot.style.color = ""}, 500);
     };
 
 function iconFive() {
     spock.style.color = "rgb(113, 215, 255)";
     setTimeout(function() {
-        spock.style.color = ""}, 500)
+        spock.style.color = ""}, 500);
     };
 
 
