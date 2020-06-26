@@ -16,8 +16,10 @@ const spock = document.querySelector("#spock");
 
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
-    newGame();
-    $("#start").addClass("hide-button");
+    setTimeout(function() {
+        newGame();
+        $("#start").addClass("hide-button");
+    },750);
 });
 
 //Resets all the values and calls function 'round'
@@ -72,7 +74,9 @@ function iconFlash (i) {
         };
         //Only if length are equal, player can start to select the icons
         if (game.runningSequence.length == game.computerSequence.length) {
+            setTimeout(function() {
             playerTurn();
+            },200);
         };        
     },1200*i);
 };
@@ -82,7 +86,7 @@ function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate"); 
         setTimeout(function() {
-        $(".game-symbol").removeClass("rotate")}, 500);   
+        $(".game-symbol").removeClass("rotate")}, 1000);   
     });  
   
     $("#rocket").click(function() {
@@ -126,18 +130,20 @@ function playerTurn() {
 
 function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
-        if (game.computerSequence.toString() == game.playerSequence.toString()) {
-            console.log("good");
-            $("#continue").removeClass("hide-button");
-            continueButton();
+        setTimeout(function() {
+            if (game.computerSequence.toString() == game.playerSequence.toString()) {
+                console.log("good");
+                $("#continue").removeClass("hide-button");
+                continueButton();
 
-        } else {
-            console.log("wrong");
-            $("#retry").removeClass("hide-button");
-            retryButton();
-        };
-        //This prevents the player from clicking while the computerSequence is running
-        $(".game-symbol").unbind();
+            } else {
+                console.log("wrong");
+                $("#retry").removeClass("hide-button");
+                retryButton();
+            };
+            //This prevents the player from clicking while the computerSequence is running
+            $(".game-symbol").unbind();
+        },200);
     };    
 };
 
@@ -168,10 +174,10 @@ function retryButton() {
 function iconOne() {
     rocket.style.color = "rgb(239, 243, 28)";    
     setTimeout(function() {
-        rocket.style.color = ""}, 500);
+        rocket.style.color = ""}, 1000);
     $(".icon-rocket").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 500);    
+        $(".fas").removeClass("icon-effect")}, 1000);    
     };
 
 function iconTwo() {
