@@ -54,18 +54,23 @@
 
 @media only screen and (max-width: 576px){
     .instructions{
-        width: 22.5rem;    
-        height: 40rem;    
-        margin-top: 0.5rem;  
+        width: 20rem;    
+        height: 30rem;    
+        margin-top: 1rem;  
     }
 
     .instructions-header{
         font-size: 1.25rem;
     }
 
+    .instructions-text{
+        line-height: 1.5rem;
+    }
+
     .instructions-text p{
         font-size: 0.75rem;
     }
+    
     .exit{
         font-size: 1rem;
     }
@@ -74,5 +79,22 @@
 /*Media screen max-height 400px*/
 
 @media only screen and (max-height: 400px){
+    .instructions{
+        width: 33rem;    
+        height: 19rem;    
+        margin-top: 0.5rem;  
+    }
 
+    .instructions-header{
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .instructions-text p{
+        font-size: 0.75rem;
+        line-height: 1.5rem;
+    }
+    .exit{
+        font-size: 1rem;
+    }
 }
