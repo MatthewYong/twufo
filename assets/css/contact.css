@@ -13,11 +13,11 @@
 
 .contact{
     background-color: rgba(25, 25, 25, 0.8);
-    width: 40rem;    
-    height: 30rem;    
-    padding: 2.5rem;
+    width: 35rem;    
+    height: 40rem;    
+    padding: 1.5rem;
     margin: auto;
-    margin-top: 5rem;  
+    margin-top: 3rem;  
     text-transform: uppercase; 
     text-align: center; 
 }
@@ -32,6 +32,10 @@
     word-spacing: 0.1rem;
     line-height: 2rem;
     text-align: center;  
+}
+
+.label-header{
+    font-size: 1.25rem;
 }
 
 .text-input{
@@ -76,7 +80,44 @@
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){
+    .exit{
+    font-size: 1rem;
+    }
 
+    .contact{
+        background-color: rgba(25, 25, 25, 0.8);
+        width: 17rem;    
+        height: 32rem;    
+        padding: 1.5rem;
+        margin: auto;
+        margin-top: 2rem;  
+        text-transform: uppercase; 
+        text-align: center; 
+    }
+
+    .contact-header p{
+        font-size: 1.25rem;
+    }
+
+    .text-input{
+        font-size: 0.75rem;
+        color: #00FF7F;
+        background-color: rgba(25, 25, 25, 0.7);
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 15rem;
+    }
+
+    .label-header{
+        font-size: 0.75rem;
+    }
+
+    .send-button{
+        font-size: 0.75rem;
+    }
 }
 
 /*Media screen max-height 400px*/
