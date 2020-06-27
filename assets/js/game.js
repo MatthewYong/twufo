@@ -83,13 +83,13 @@ function iconFlash (i) {
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
-    var clickDisabled = true;
+    var disableClick = true;
     $(".game-symbol").on("click", function() {
-        if(clickDisabled) {        
+        if(disableClick) {        
             $(this).addClass("rotate");  
             clickDisabled = false;          
             setTimeout(function(){
-                clickDisabled = true}, 800);
+                disableClick = true}, 800);
         };    
     });
 
