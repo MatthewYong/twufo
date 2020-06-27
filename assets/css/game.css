@@ -116,21 +116,21 @@
     }
 }
 
-/*Media screen max-width 900px*/
+/*Media screen max-height 600px*/
 
-@media only screen and (max-device-height: 500px){ 
+@media only screen and (max-height: 600px){ 
     .container{
     padding-top: 1rem;
     }
 
     .game-symbol{
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .game-symbol i{
-        width: 5rem;
-        height: 5rem;
-        padding-top: 0.75rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-top: 0.5rem;
     }
 
     .buttons{
@@ -138,8 +138,8 @@
     }
 
     #level{
-    font-size: 1.25rem;
-    padding-top: 0.5rem;
+    font-size: 1rem;
+    padding-top: 0.25rem;
     padding-bottom: 0.5rem;
     }
 }
