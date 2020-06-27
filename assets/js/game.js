@@ -8,10 +8,18 @@ round: 0
 };
 
 //Audio button to turn on or mute sound
-$("#volume, #mute").click(function() {
-    $("#volume").toggleClass("hide-button");
-    $("#mute").toggleClass("hide-button");
+$("#volume").click(function() {
+    $("#volume").addClass("hide-button");
+    $("#mute").removeClass("hide-button");
+    $("audio").prop("muted", true);
 });
+
+$("#mute").click(function() {
+    $("#volume").removeClass("hide-button");
+    $("#mute").addClass("hide-button");
+    $("audio").prop("muted", false);
+});
+
 
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
@@ -195,7 +203,7 @@ function iconOne() {
         $(".icon-rocket").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-       
+    
     var audio = document.getElementById("audioRocket");
         audio.play();
     };
