@@ -7,6 +7,11 @@ level: 0,
 round: 0
 };
 
+//Audio button to turn on or mute sound
+$("#volume").click(function() {
+    $("#volume").mute();
+});
+
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
         newGame();
@@ -190,8 +195,8 @@ function iconOne() {
         $(".fas").removeClass("icon-effect")
         }, 800);
        
-    /*var audio = document.getElementById("testaudio");
-        audio.play();*/
+    var audio = document.getElementById("audioRocket");
+        audio.play();
     };
 
 function iconTwo() {
