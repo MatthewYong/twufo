@@ -84,8 +84,7 @@ function iconFlash (i) {
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
     var clickDisabled = true;
-    $(this, "i").on("click", function() {
-        compareSequence();
+    $(".game-symbol").on("click", function() {
         if(clickDisabled) {        
             $(this).addClass("rotate");  
             clickDisabled = false;          
@@ -104,30 +103,35 @@ function playerTurn() {
     $("#rocket").click(function() {
         game.playerSequence.push(0);
         iconOne();
+        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#astronaut").click(function() {
         game.playerSequence.push(1);        
         iconTwo();
+        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#jedi").click(function() {
         game.playerSequence.push(2);
         iconThree();
+        compareSequence();
         console.log(game.playerSequence)
     });
 
    $("#robot").click(function() {
         game.playerSequence.push(3);
         iconFour();
+        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#spock").click(function() {
         game.playerSequence.push(4);
         iconFive();
+        compareSequence();
         console.log(game.playerSequence)
     });
 };

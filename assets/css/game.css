@@ -27,7 +27,7 @@
 }
 
 .icon-effect{
-    box-shadow: 0.3125rem 0.3125rem 0.3125rem 0.625rem rgb(184, 184, 184);
+    box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753);
 }
 
 /*Activates when icons are clicked*/
