@@ -32,7 +32,7 @@
 
 /*Activates when icons are clicked*/
 .game-symbol.rotate{
-    transition: 500ms;
+    transition: 800ms;
     transform: rotate(360deg);
 }
 

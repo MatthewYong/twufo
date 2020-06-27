@@ -16,10 +16,8 @@ const spock = document.querySelector("#spock");
 
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
-    setTimeout(function() {
         newGame();
         $("#start").addClass("hide-button");
-    },750);
 });
 
 //Resets all the values and calls function 'round'
@@ -40,13 +38,15 @@ function round() {
 
 //Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
 function computerTurn() {
-    for (i=0; i < game.round; i++) {
-        game.computerSequence.push(Math.floor(Math.random() * 5));
-    };
-    for (i=0; i < game.computerSequence.length; i++) {  
-        iconFlash(i);
-    };
-    console.log(game.computerSequence);
+    setTimeout(function() {
+        for (i=0; i < game.round; i++) {
+            game.computerSequence.push(Math.floor(Math.random() * 5));
+        };
+        for (i=0; i < game.computerSequence.length; i++) {  
+            iconFlash(i);
+        };
+        console.log(game.computerSequence);
+    },750);
 };    
 
 //This function will access each value in the computerSequence array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
@@ -86,7 +86,7 @@ function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate"); 
         setTimeout(function() {
-        $(".game-symbol").removeClass("rotate")}, 1000);   
+        $(".game-symbol").removeClass("rotate")}, 800); 
     });  
   
     $("#rocket").click(function() {
@@ -142,16 +142,16 @@ function compareSequence() {
                 retryButton();
             };
             //This prevents the player from clicking while the computerSequence is running
-            $(".game-symbol").unbind();
-        },200);
+            $(".game-symbol").off("click");
+        },750);
     };    
 };
 
-//When CONTINUE button is clicked, increment the level by 1 and reset the button by unbind function
+//When CONTINUE button is clicked, increment the level by 1 and reset the button by off function
 function continueButton() {
     $("#continue").click(function() {
         $("#continue").addClass("hide-button");
-        $("#continue").unbind();
+        $("#continue").off("click");
         game.playerSequence = [];
         game.runningSequence = [];
         game.level++;
@@ -174,46 +174,46 @@ function retryButton() {
 function iconOne() {
     rocket.style.color = "rgb(239, 243, 28)";    
     setTimeout(function() {
-        rocket.style.color = ""}, 1000);
+        rocket.style.color = ""}, 800);
     $(".icon-rocket").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 1000);    
+        $(".fas").removeClass("icon-effect")}, 800);    
     };
 
 function iconTwo() {
     astronaut.style.color = "rgb(250, 184, 172)";
     setTimeout(function() {
-        astronaut.style.color = ""}, 500);
+        astronaut.style.color = ""}, 800);
     $(".icon-astronaut").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 500); 
+        $(".fas").removeClass("icon-effect")}, 800); 
     };
 
 function iconThree() {
     jedi.style.color = "rgb(197, 148, 252)";
     setTimeout(function() {
-        jedi.style.color = ""}, 500);
+        jedi.style.color = ""}, 800);
     $(".icon-jedi").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 500); 
+        $(".fas").removeClass("icon-effect")}, 800); 
     };
 
 function iconFour() {
     robot.style.color = "rgb(101, 241, 148)";
     setTimeout(function() {
-        robot.style.color = ""}, 500);
+        robot.style.color = ""}, 800);
     $(".icon-robot").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 500); 
+        $(".fas").removeClass("icon-effect")}, 800); 
     };
 
 function iconFive() {
     spock.style.color = "rgb(113, 215, 255)";
     setTimeout(function() {
-        spock.style.color = ""}, 500);
+        spock.style.color = ""}, 800);
     $(".icon-spock").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 500); 
+        $(".fas").removeClass("icon-effect")}, 800); 
     };
 
 
