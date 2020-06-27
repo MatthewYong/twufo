@@ -7,13 +7,6 @@ level: 0,
 round: 0
 };
 
-//Constants that targets the icons in game.html
-const rocket = document.querySelector("#rocket");
-const astronaut = document.querySelector("#astronaut");
-const jedi = document.querySelector("#jedi");
-const robot = document.querySelector("#robot");
-const spock = document.querySelector("#spock");
-
 //When START button is clicked: start a new game by calling
 $("#start").click(function() {
         newGame();
