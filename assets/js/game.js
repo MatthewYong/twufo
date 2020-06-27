@@ -105,7 +105,6 @@ function playerTurn() {
                 });
             });  
         },800);
-    debugger;
     }); 
 
   

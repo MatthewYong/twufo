@@ -1,7 +1,3 @@
-.container{
-    padding-top: 10rem;
-}
-
 .game-symbol{
     text-align: center;
     color: rgb(14, 91, 207);
@@ -37,8 +33,6 @@
 
 #level{
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 3rem;
 }
 
 #start, #continue, #retry, #back, #volume{
@@ -68,9 +62,18 @@
 
 
 
-/*Media screen min-width 578px*/
+/*Media screen min-width 577px*/
 
-@media only screen and (min-width: 578px){ 
+@media only screen and (min-width: 577px){ 
+    .container{
+    padding-top: 10rem;
+    }
+
+    #level{
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    }
+
     .game-symbol{
         font-size: 5rem;
     }
@@ -85,13 +88,22 @@
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){ 
+    .container{
+    padding-top: 3rem;
+    }
+
+    #level{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    }
+
     .game-symbol{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .game-symbol i{
-        width: 3rem;
-        height: 3rem;
-        padding-top: 0.5rem;
+        width: 5rem;
+        height: 5rem;
+        padding-top: 0.75rem;
     }
 }
