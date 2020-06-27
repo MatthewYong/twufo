@@ -215,6 +215,8 @@ function iconTwo() {
         $(".icon-astronaut").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
+    var audio = document.getElementById("audioAstronaut");
+        audio.play();
     };
 
 function iconThree() {
@@ -224,6 +226,8 @@ function iconThree() {
         $(".icon-jedi").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
+    var audio = document.getElementById("audioJedi");
+        audio.play();
     };
 
 function iconFour() {
@@ -233,6 +237,8 @@ function iconFour() {
         $(".icon-robot").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
+    var audio = document.getElementById("audioRobot");
+        audio.play();
     };
     
 function iconFive() {
@@ -242,6 +248,8 @@ function iconFive() {
         $(".icon-spock").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
+    var audio = document.getElementById("audioSpock");
+        audio.play();
     };
 
 
