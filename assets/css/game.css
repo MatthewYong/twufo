@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-#start, #continue, #retry, #back, .volume{
+#start, #continue, #retry, #back, #volume, #mute{
     color: rgb(64, 175, 240);
     background-color: rgba(25, 25, 25, 0.8);
 }

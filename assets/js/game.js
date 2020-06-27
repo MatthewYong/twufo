@@ -8,8 +8,9 @@ round: 0
 };
 
 //Audio button to turn on or mute sound
-$("#volume").click(function() {
-    $("#volume").mute();
+$("#volume, #mute").click(function() {
+    $("#volume").toggleClass("hide-button");
+    $("#mute").toggleClass("hide-button");
 });
 
 //When START button is clicked: start a new game by calling
