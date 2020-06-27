@@ -83,22 +83,31 @@ function iconFlash (i) {
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
-    var disableClick = true;
+    /*var disableClick = true;
     $(".game-symbol").on("click", function() {
         if(disableClick) {        
             $(this).addClass("rotate");  
-            clickDisabled = false;          
+            disableClick = false;          
             setTimeout(function(){
                 disableClick = true}, 800);
         };    
-    });
+    });*/
 
-    /*
+    
     $(".game-symbol").on("click", function() {
-        $(this).addClass("rotate"); 
+        $(this).addClass("rotate");
+        $(this).unbind("click");      
         setTimeout(function() {
-        $(".game-symbol").removeClass("rotate")}, 800); 
-    }); */
+            $(".game-symbol").removeClass("rotate");
+            $(this).bind("click", function() {
+                $(".game-symbol").on("click", function() {
+                    $(this).addClass("rotate");
+                });
+            });  
+        },800);
+    debugger;
+    }); 
+
   
     $("#rocket").click(function() {
         game.playerSequence.push(0);
@@ -121,7 +130,7 @@ function playerTurn() {
         console.log(game.playerSequence)
     });
 
-   $("#robot").click(function() {
+    $("#robot").click(function() {
         game.playerSequence.push(3);
         iconFour();
         compareSequence();
@@ -135,6 +144,7 @@ function playerTurn() {
         console.log(game.playerSequence)
     });
 };
+
 
 
 //Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
@@ -178,8 +188,6 @@ function retryButton() {
         $("#level").text("Level 0");
     });
 };
-
-
 
 //Functions that executes the icons to flash
 function iconOne() {

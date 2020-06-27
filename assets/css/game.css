@@ -2,6 +2,17 @@
     padding-top: 10rem;
 }
 
+.game-symbol{
+    text-align: center;
+    color: rgb(14, 91, 207);
+    cursor: pointer;
+}
+
+.game-symbol i{
+    border-radius: 50%;
+    background: rgba(25, 25, 25, 0.6);
+}
+
 .buttons{
     text-align: center;
 }
@@ -10,28 +21,12 @@
     outline: none;
 }
 
-.game-symbol{
-    text-align: center;
-    color: rgb(14, 91, 207);
-    font-size: 5rem;
-    cursor: pointer;
-}
-
-.game-symbol i{
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%;
-    padding-top: 2rem;
-    background: rgba(25, 25, 25, 0.6);
-    /*box-shadow: 0.3125rem 0.3125rem 0.3125rem 0.625rem rgb(184, 184, 184);*/
-}
-
 .icon-effect{
     box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753);
 }
 
 /*Activates when icons are clicked*/
-.game-symbol.rotate{
+.rotate{
     transition: 800ms;
     transform: rotate(360deg);
 }
@@ -69,4 +64,34 @@
 
 #spock{
     color: rgb(52, 116, 189);
+}
+
+
+
+/*Media screen min-width 578px*/
+
+@media only screen and (min-width: 578px){ 
+    .game-symbol{
+        font-size: 5rem;
+    }
+
+    .game-symbol i{
+        width: 9rem;
+        height: 9rem;
+        padding-top: 2rem;
+    }
+}
+
+/*Media screen max-width 576px*/
+
+@media only screen and (max-width: 576px){ 
+    .game-symbol{
+        font-size: 4rem;
+    }
+
+    .game-symbol i{
+        width: 3rem;
+        height: 3rem;
+        padding-top: 0.5rem;
+    }
 }
