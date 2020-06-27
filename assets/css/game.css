@@ -66,23 +66,27 @@
 
 @media only screen and (min-width: 577px){ 
     .container{
-    padding-top: 10rem;
-    }
-
-    #level{
-    padding-top: 10rem;
-    padding-bottom: 3rem;
+    padding-top: 3rem;
     }
 
     .game-symbol{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .game-symbol i{
-        width: 9rem;
-        height: 9rem;
-        padding-top: 2rem;
+        width: 7.5rem;
+        height: 7.5rem;
+        padding-top: 1.5rem;
     }
+
+    .buttons{
+        font-size: 2rem;
+    }
+
+    #level{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    }   
 }
 
 /*Media screen max-width 576px*/
@@ -92,9 +96,31 @@
     padding-top: 3rem;
     }
 
+    .game-symbol{
+        font-size: 3.5rem;
+    }
+
+    .game-symbol i{
+        width: 5.5rem;
+        height: 5.5rem;
+        padding-top: 1rem;
+    }
+
+    .buttons{
+        font-size: 1.25rem;
+    }
+
     #level{
     padding-top: 2rem;
     padding-bottom: 3rem;
+    }
+}
+
+/*Media screen max-width 900px*/
+
+@media only screen and (max-device-height: 500px){ 
+    .container{
+    padding-top: 1rem;
     }
 
     .game-symbol{
@@ -105,5 +131,15 @@
         width: 5rem;
         height: 5rem;
         padding-top: 0.75rem;
+    }
+
+    .buttons{
+        font-size: 1rem;
+    }
+
+    #level{
+    font-size: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     }
 }
