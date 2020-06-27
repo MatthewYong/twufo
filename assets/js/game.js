@@ -188,7 +188,9 @@ function iconOne() {
         rocket.style.color = ""}, 800);
     $(".icon-rocket").addClass("icon-effect"); 
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800);    
+        $(".fas").removeClass("icon-effect")}, 800);           
+    /*var audio = document.getElementById("testaudio");
+        audio.play();*/
     };
 
 function iconTwo() {
