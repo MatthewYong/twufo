@@ -190,51 +190,53 @@ function retryButton() {
 
 //Functions that executes the icons to flash
 function iconOne() {
-    rocket.style.color = "rgb(239, 243, 28)";    
-    setTimeout(function() {
-        rocket.style.color = ""}, 800);
     $(".icon-rocket").addClass("icon-effect"); 
+    $(".icon-rocket").css("color", "rgb(239, 243, 28)")    
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800);           
+        $(".icon-rocket").css("color", "") 
+        $(".fas").removeClass("icon-effect")
+        }, 800);
+       
     /*var audio = document.getElementById("testaudio");
         audio.play();*/
     };
 
 function iconTwo() {
-    astronaut.style.color = "rgb(250, 184, 172)";
-    setTimeout(function() {
-        astronaut.style.color = ""}, 800);
     $(".icon-astronaut").addClass("icon-effect"); 
+    $(".icon-astronaut").css("color", "rgb(250, 184, 172)")    
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800); 
+        $(".icon-astronaut").css("color", "") 
+        $(".fas").removeClass("icon-effect")
+        }, 800);
     };
 
 function iconThree() {
-    jedi.style.color = "rgb(197, 148, 252)";
-    setTimeout(function() {
-        jedi.style.color = ""}, 800);
     $(".icon-jedi").addClass("icon-effect"); 
+    $(".icon-jedi").css("color", "rgb(197, 148, 252)")    
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800); 
+        $(".icon-jedi").css("color", "") 
+        $(".fas").removeClass("icon-effect")
+        }, 800);
     };
 
 function iconFour() {
-    robot.style.color = "rgb(101, 241, 148)";
-    setTimeout(function() {
-        robot.style.color = ""}, 800);
     $(".icon-robot").addClass("icon-effect"); 
+    $(".icon-robot").css("color", "rgb(101, 241, 148)")    
     setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800); 
+        $(".icon-robot").css("color", "") 
+        $(".fas").removeClass("icon-effect")
+        }, 800);
+    };
+    
+function iconFive() {
+    $(".icon-spock").addClass("icon-effect"); 
+    $(".icon-spock").css("color", "rgb(113, 215, 255)")    
+    setTimeout(function() {
+        $(".icon-spock").css("color", "") 
+        $(".fas").removeClass("icon-effect")
+        }, 800);
     };
 
-function iconFive() {
-    spock.style.color = "rgb(113, 215, 255)";
-    setTimeout(function() {
-        spock.style.color = ""}, 800);
-    $(".icon-spock").addClass("icon-effect"); 
-    setTimeout(function() {
-        $(".fas").removeClass("icon-effect")}, 800); 
-    };
 
 
 
