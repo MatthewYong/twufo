@@ -8,8 +8,7 @@
 
 .menu{
     background-color: rgba(25, 25, 25, 0.6);
-    padding: 1.5rem;
-    margin-top: 6rem;   
+    padding: 1.5rem; 
     margin: auto;
     text-align: center;    
     text-transform: uppercase; 
@@ -28,7 +27,6 @@
     .menu{
         width: 30rem;    
         height: 18rem;    
-        padding: 1.5rem;
         margin-top: 8rem;
     }
 }
@@ -37,6 +35,7 @@
 
 @media only screen and (max-width: 767px){
     .menu{
+        margin-top: 5rem;  
         width: 30rem;    
         height: 18rem;    
     }
@@ -47,7 +46,24 @@
 @media only screen and (max-width: 576px){
     .menu{
         font-size: 1.5rem;
+        margin-top: 5rem;  
         width: 20rem;    
         height: 12rem;    
+    }
+}
+
+/*Media screen max-height 400px*/
+
+@media only screen and (max-height: 400px){
+    .menu{
+        font-size: 1.5rem;
+        margin-top: 0.5rem;  
+        width: 20rem;    
+        height: 12rem;    
+    }
+
+    .logo{ 
+        padding: 1rem;  
+        margin-top: 0.5rem;
     }
 }
