@@ -66,7 +66,7 @@
 
 @media only screen and (min-width: 577px){ 
     .container{
-    padding-top: 3rem;
+    padding-top: 10rem;
     }
 
     .game-symbol{
@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 576px){ 
     .container{
-    padding-top: 3rem;
+    padding-top: 5rem;
     }
 
     .game-symbol{
@@ -116,9 +116,9 @@
     }
 }
 
-/*Media screen max-height 600px*/
+/*Media screen max-height 450px*/
 
-@media only screen and (max-height: 600px){ 
+@media only screen and (max-height: 450px){ 
     .container{
     padding-top: 1rem;
     }
