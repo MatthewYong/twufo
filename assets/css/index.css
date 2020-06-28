@@ -13,7 +13,16 @@
     margin: auto;
     text-align: center;    
     text-transform: uppercase; 
+ /* animation-name: color-test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;*/
 }
+
+/*
+@keyframes color-test {
+    from {box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753)}
+    to {box-shadow: 0 0 1rem 1rem rgba(16, 60, 90, 0.753)}
+}*/
 
 .menu a{
     color: #00FF7F;

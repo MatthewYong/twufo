@@ -13,6 +13,14 @@
     text-align: center;
 }
 
+.buttons i:hover{
+    color: #00FF7F;
+}
+
+#start:hover, #continue:hover, #retry:hover{
+    color: #00FF7F;
+}
+
 .buttons button:focus{
     outline: none;
 }
