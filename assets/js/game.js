@@ -53,7 +53,7 @@ function computerTurn() {
             iconFlash(i);
         };
         console.log(game.computerSequence);
-    },750);
+    },500);
 };    
 
 //This function will access each value in the computerSequence array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
@@ -100,7 +100,7 @@ function playerTurn() {
             } else {
                 compareSequence()
                 }
-        },500);
+        },900);
     }); 
   
     $("#rocket").click(function() {
@@ -146,7 +146,6 @@ function compareSequence() {
                 console.log("good");
                 $("#continue").removeClass("hide-button");
                 continueButton()
-
             } else {
                 console.log("wrong");
                 $("#retry").removeClass("hide-button");
@@ -188,7 +187,7 @@ function iconOne() {
     setTimeout(function() {
         $(".icon-rocket").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 700);
+        }, 800);
     };
 
 function iconTwo() {
@@ -199,7 +198,7 @@ function iconTwo() {
     setTimeout(function() {
         $(".icon-astronaut").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 700);
+        }, 800);
     };
 
 function iconThree() {
@@ -210,7 +209,7 @@ function iconThree() {
     setTimeout(function() {
         $(".icon-jedi").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 700);
+        }, 800);
     };
 
 function iconFour() {
@@ -221,7 +220,7 @@ function iconFour() {
     setTimeout(function() {
         $(".icon-robot").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 700);
+        }, 800);
     };
     
 function iconFive() {
@@ -232,7 +231,7 @@ function iconFive() {
     setTimeout(function() {
         $(".icon-spock").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 700);
+        }, 800);
     };
 
 
