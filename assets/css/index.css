@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+.menu a:hover{
+    color: rgb(64, 175, 240);
+}
+
 
 /*Media screen min-width 768px*/
 
