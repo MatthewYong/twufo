@@ -1,6 +1,5 @@
 .game-symbol{
     text-align: center;
-    color: rgb(14, 91, 207);
     cursor: pointer;
 }
 
@@ -17,12 +16,12 @@
     color: #00FF7F;
 }
 
-#start:hover, #continue:hover, #retry:hover{
-    color: #00FF7F;
-}
-
 .buttons button:focus{
     outline: none;
+}
+
+#start:hover, #continue:hover, #retry:hover{
+    color: #00FF7F;
 }
 
 .icon-effect{

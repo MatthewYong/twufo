@@ -90,63 +90,46 @@ function iconFlash (i) {
 
 //When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
 function playerTurn() {
-    /*var disableClick = true;
-    $(".game-symbol").on("click", function() {
-        if(disableClick) {        
-            $(this).addClass("rotate");  
-            disableClick = false;          
-            setTimeout(function(){
-                disableClick = true}, 800);
-        };    
-    });*/
-
-    
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate");
-        $(this).unbind("click");      
+        $(".game-symbol").off();
         setTimeout(function() {
             $(".game-symbol").removeClass("rotate");
-            $(this).bind("click", function() {
-                $(".game-symbol").on("click", function() {
-                    $(this).addClass("rotate");
-                });
-            });  
+            if(game.computerSequence.length != game.playerSequence.length) {
+                playerTurn()
+            } else {
+                compareSequence()
+                }
         },800);
     }); 
-
   
     $("#rocket").click(function() {
         game.playerSequence.push(0);
         iconOne();
-        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#astronaut").click(function() {
         game.playerSequence.push(1);        
         iconTwo();
-        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#jedi").click(function() {
         game.playerSequence.push(2);
         iconThree();
-        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#robot").click(function() {
         game.playerSequence.push(3);
         iconFour();
-        compareSequence();
         console.log(game.playerSequence)
     });
 
     $("#spock").click(function() {
         game.playerSequence.push(4);
         iconFive();
-        compareSequence();
         console.log(game.playerSequence)
     });
 };
@@ -158,18 +141,19 @@ function playerTurn() {
 function compareSequence() {
     if(game.computerSequence.length == game.playerSequence.length) {
         setTimeout(function() {
-            if (game.computerSequence.toString() == game.playerSequence.toString()) {
+            if (game.computerSequence.toString() == 
+            game.playerSequence.toString()) {
                 console.log("good");
                 $("#continue").removeClass("hide-button");
-                continueButton();
+                continueButton()
 
             } else {
                 console.log("wrong");
                 $("#retry").removeClass("hide-button");
-                retryButton();
+                retryButton()
             };
             //This prevents the player from clicking while the computerSequence is running
-            $(".game-symbol").off("click");
+            $(".game-symbol").off("click")
         },750);
     };    
 };
@@ -182,7 +166,7 @@ function continueButton() {
         game.playerSequence = [];
         game.runningSequence = [];
         game.level++;
-        round();
+        round()
     });
 };
 
@@ -195,61 +179,60 @@ function retryButton() {
     });
 };
 
-//Functions that executes the icons to flash
+//Functions to set icons to flash and play an audio
 function iconOne() {
+    var audio = document.getElementById("audioRocket");
+    audio.play();
     $(".icon-rocket").addClass("icon-effect"); 
     $(".icon-rocket").css("color", "rgb(239, 243, 28)")    
     setTimeout(function() {
         $(".icon-rocket").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-    
-    var audio = document.getElementById("audioRocket");
-        audio.play();
     };
 
 function iconTwo() {
+    var audio = document.getElementById("audioAstronaut");
+    audio.play();
     $(".icon-astronaut").addClass("icon-effect"); 
     $(".icon-astronaut").css("color", "rgb(250, 184, 172)")    
     setTimeout(function() {
         $(".icon-astronaut").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-    var audio = document.getElementById("audioAstronaut");
-        audio.play();
     };
 
 function iconThree() {
+    var audio = document.getElementById("audioJedi");
+    audio.play();
     $(".icon-jedi").addClass("icon-effect"); 
     $(".icon-jedi").css("color", "rgb(197, 148, 252)")    
     setTimeout(function() {
         $(".icon-jedi").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-    var audio = document.getElementById("audioJedi");
-        audio.play();
     };
 
 function iconFour() {
+    var audio = document.getElementById("audioRobot");
+    audio.play();
     $(".icon-robot").addClass("icon-effect"); 
     $(".icon-robot").css("color", "rgb(101, 241, 148)")    
     setTimeout(function() {
         $(".icon-robot").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-    var audio = document.getElementById("audioRobot");
-        audio.play();
     };
     
 function iconFive() {
+    var audio = document.getElementById("audioSpock");
+    audio.play();
     $(".icon-spock").addClass("icon-effect"); 
     $(".icon-spock").css("color", "rgb(113, 215, 255)")    
     setTimeout(function() {
         $(".icon-spock").css("color", "") 
         $(".fas").removeClass("icon-effect")
         }, 800);
-    var audio = document.getElementById("audioSpock");
-        audio.play();
     };
 
 
