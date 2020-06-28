@@ -30,7 +30,7 @@
 
 /*Activates when icons are clicked*/
 .rotate{
-    transition: 800ms;
+    transition: 500ms;
     transform: rotate(360deg);
 }
 

@@ -88,7 +88,7 @@ function iconFlash (i) {
     },1200*i);
 };
 
-//When icons are clicked, push to playerSequence array, flash icon and calls function compareSequence
+//When an icon is clicked, push to the integer to playerSequence array, calls one of the function icon, wait 750ms before continue to next click or next function
 function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate");
@@ -100,7 +100,7 @@ function playerTurn() {
             } else {
                 compareSequence()
                 }
-        },800);
+        },500);
     }); 
   
     $("#rocket").click(function() {
@@ -188,7 +188,7 @@ function iconOne() {
     setTimeout(function() {
         $(".icon-rocket").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 700);
     };
 
 function iconTwo() {
@@ -199,7 +199,7 @@ function iconTwo() {
     setTimeout(function() {
         $(".icon-astronaut").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 700);
     };
 
 function iconThree() {
@@ -210,7 +210,7 @@ function iconThree() {
     setTimeout(function() {
         $(".icon-jedi").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 700);
     };
 
 function iconFour() {
@@ -221,7 +221,7 @@ function iconFour() {
     setTimeout(function() {
         $(".icon-robot").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 700);
     };
     
 function iconFive() {
@@ -232,7 +232,7 @@ function iconFive() {
     setTimeout(function() {
         $(".icon-spock").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 700);
     };
 
 
