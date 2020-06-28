@@ -1,16 +1,3 @@
-.exit{
-    font-size: 2rem;
-    text-align: right;
-}
-
-.exit a{
-    color: #00FF7F;
-}
-
-.exit a:hover{
-    color:rgba(0, 255, 128, 0.712);
-}
-
 .contact{
     background-color: rgba(25, 25, 25, 0.8);
     width: 35rem;    
@@ -68,10 +55,6 @@
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){
-    .exit{
-    font-size: 1rem;
-    }
-
     .contact{
         background-color: rgba(25, 25, 25, 0.8);
         width: 18rem;    

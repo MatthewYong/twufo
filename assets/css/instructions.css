@@ -17,19 +17,6 @@
     text-align: left;  
 }
 
-.exit{
-    font-size: 2rem;
-    text-align: right;
-}
-
-.exit a{
-    color: #00FF7F;
-}
-
-.exit a:hover{
-    color:rgba(0, 255, 128, 0.712);
-}
-
 /*Media screen min-width 768px*/
 
 @media only screen and (min-width: 768px){
@@ -70,10 +57,6 @@
     .instructions-text p{
         font-size: 0.75rem;
     }
-    
-    .exit{
-        font-size: 1rem;
-    }
 }
 
 /*Media screen max-height 400px*/
@@ -93,9 +76,6 @@
     .instructions-text p{
         font-size: 0.75rem;
         line-height: 1.5rem;
-    }
-    .exit{
-        font-size: 1rem;
     }
 }
 
