@@ -94,14 +94,15 @@ function playerTurn() {
         $(this).addClass("rotate");
         $(".game-symbol").off();
         setTimeout(function() {
-            $(".game-symbol").removeClass("rotate");
             if(game.computerSequence.length != game.playerSequence.length) {
+                $(".game-symbol").removeClass("rotate");
                 playerTurn()
             } else {
+                $(".game-symbol").removeClass("rotate");
                 compareSequence()
                 }
-        },900);
-    }); 
+        },600);
+    });
   
     $("#rocket").click(function() {
         game.playerSequence.push(0);
@@ -153,7 +154,7 @@ function compareSequence() {
             };
             //This prevents the player from clicking while the computerSequence is running
             $(".game-symbol").off("click")
-        },750);
+        },100);
     };    
 };
 
@@ -187,7 +188,7 @@ function iconOne() {
     setTimeout(function() {
         $(".icon-rocket").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 600);
     };
 
 function iconTwo() {
@@ -198,7 +199,7 @@ function iconTwo() {
     setTimeout(function() {
         $(".icon-astronaut").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 600);
     };
 
 function iconThree() {
@@ -209,7 +210,7 @@ function iconThree() {
     setTimeout(function() {
         $(".icon-jedi").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 600);
     };
 
 function iconFour() {
@@ -220,7 +221,7 @@ function iconFour() {
     setTimeout(function() {
         $(".icon-robot").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 600);
     };
     
 function iconFive() {
@@ -231,7 +232,7 @@ function iconFive() {
     setTimeout(function() {
         $(".icon-spock").css("color", "") 
         $(".fas").removeClass("icon-effect")
-        }, 800);
+        }, 600);
     };
 
 
