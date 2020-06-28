@@ -82,6 +82,7 @@ function iconFlash (i) {
         //Only if length are equal, player can start to select the icons
         if (game.runningSequence.length == game.computerSequence.length) {
             setTimeout(function() {
+                $(".game-symbol").css("cursor", "pointer");
             playerTurn();
             },200);
         };        
@@ -94,12 +95,12 @@ function playerTurn() {
         $(this).addClass("rotate");
         $(".game-symbol").off();
         setTimeout(function() {
+            $(".game-symbol").removeClass("rotate");
             if(game.computerSequence.length != game.playerSequence.length) {
-                $(".game-symbol").removeClass("rotate");
                 playerTurn()
             } else {
-                $(".game-symbol").removeClass("rotate");
-                compareSequence()
+                compareSequence();
+                $(".game-symbol").css("cursor", "");                
                 }
         },600);
     });
