@@ -5,9 +5,12 @@
     height: 40rem;    
     padding: 1.5rem;
     margin: auto;
-    margin-top: 3rem;  
+    top: 0rem;  
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-transform: uppercase; 
-    text-align: center; 
+    text-align: center;
+    position: relative;
 }
 
 .contact-header{
@@ -60,31 +63,36 @@
 }
 
 
-/*Media screen max-width 576px*/
+/*Media screen min-width 768px
 
-@media only screen and (max-width: 576px){
+@media only screen and (min-width: 768px){
     .contact{
-        background-color: rgba(25, 25, 25, 0.8);
-        width: 18rem;    
-        height: 32rem;    
-        padding: 1.5rem;
-        margin: auto;
-        margin-top: 3rem;  
-        margin-bottom: 1rem;
-        text-transform: uppercase; 
-        text-align: center; 
+        width: 25rem;    
+        height: 32rem; 
+        top: 0;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;  
     }
+}*/
 
+
+/*Media screen max-width 767px*/
+
+@media only screen and (max-width: 767px){
+    .contact{
+        width: 18rem;    
+        height: 32rem; 
+        top: 0;
+        margin-top: 2rem; 
+        margin-bottom: 2rem;  
+    }
+    
     .contact-header p{
         font-size: 1.25rem;
     }
 
     .text-input{
         font-size: 0.75rem;
-        color: #00FF7F;
-        background-color: rgba(25, 25, 25, 0.7);
-        text-align: center;
-        text-transform: uppercase;
         line-height: 0.5rem;
         margin-top: 0.5rem;
         margin-bottom: 0.1rem;
