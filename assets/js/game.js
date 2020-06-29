@@ -137,7 +137,6 @@ function playerTurn() {
 };
 
 
-
 //Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
 
 function compareSequence() {

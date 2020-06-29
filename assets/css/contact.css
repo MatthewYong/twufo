@@ -37,6 +37,10 @@
     width: 30rem;
 }
 
+.text-input:hover{
+    background-color: rgba(41, 41, 41, 0.8);
+}
+
 .send-button{
     text-transform: uppercase;
     color: #00FF7F;
@@ -49,7 +53,7 @@
 #message{
     text-align: left;
     line-height: 1rem;
-    padding-top: 0.5rem;
+    padding-top: 0.1rem;
 }
 
 
