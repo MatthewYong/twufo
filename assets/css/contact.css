@@ -49,6 +49,9 @@
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
+.send-button:hover{
+    background-color: rgba(41, 41, 41, 0.8);
+}
 
 #message{
     text-align: left;
