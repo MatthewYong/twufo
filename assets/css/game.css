@@ -70,7 +70,7 @@
 /*Media screen min-width 577px*/
 
 @media only screen and (min-width: 577px){ 
-    .container{
+    .game-area{
     padding-top: 5rem;
     }
 
@@ -97,7 +97,7 @@
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){ 
-    .container{
+    .game-area{
     padding-top: 5rem;
     }
 
@@ -124,7 +124,7 @@
 /*Media screen max-height 450px*/
 
 @media only screen and (max-height: 450px){ 
-    .container{
+    .game-area{
     padding-top: 1rem;
     }
 
