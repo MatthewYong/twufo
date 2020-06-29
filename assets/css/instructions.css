@@ -4,6 +4,7 @@
     padding: 2.5rem;
     margin: auto;
     text-transform: uppercase; 
+    position: relative;
 }
 
 .instructions-header{
@@ -24,7 +25,7 @@
     .instructions{
         width: 45rem;    
         height: 30rem;    
-        margin-top: 6rem;  
+        top: 6rem;  
     }
 }
 
@@ -34,7 +35,7 @@
     .instructions{
         width: 30rem;    
         height: 40rem;    
-        margin-top: 1rem;  
+        top: 1rem;  
     }
 }
 
@@ -44,7 +45,7 @@
     .instructions{
         width: 20rem;    
         height: 30rem;    
-        margin-top: 1rem;  
+        top: 1rem;  
     }
 
     .instructions-header{
@@ -66,7 +67,7 @@
     .instructions{
         width: 33rem;    
         height: 19rem;    
-        margin-top: 0.5rem;  
+        top: 0.5rem;  
     }
 
     .instructions-header{
