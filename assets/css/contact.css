@@ -44,7 +44,7 @@
     background-color: rgba(41, 41, 41, 0.8);
 }
 
-.send-button{
+#send-button{
     text-transform: uppercase;
     color: #00FF7F;
     background-color: rgba(25, 25, 25, 0.8);
@@ -52,7 +52,7 @@
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
-.send-button:hover{
+#send-button:hover{
     background-color: rgba(41, 41, 41, 0.8);
 }
 
@@ -103,7 +103,7 @@
         font-size: 0.75rem;
     }
 
-    .send-button{
+    #send-button{
         font-size: 0.75rem;
     }
 }
