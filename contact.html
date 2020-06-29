@@ -15,14 +15,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/contact.css">
 
-    <!--Link to emailjs CDN-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-            emailjs.init("user_GoQF6D4WO58PoWJJ4oWuu");
-        })();
-    </script>
-	<title>TWUFO</title>
+   	<title>TWUFO</title>
 
 </head>
 
@@ -38,7 +31,7 @@
 			<p class="lg-font contact-header">Contact</p>
 		</div>
 		<div>
-			<form action="" target="_blank">
+			<form action="" target="_blank" id="contact-form">
 				<label for="fname" class="label-header">First Name*</label>
 				<div>
 					<input class="text-input" type="text" name="first_name" id="fname" required>
@@ -59,5 +52,17 @@
 			</form>
 		</div>
 	</div>
+
+    <!--Link to emailjs CDN, code used from emailjs.com-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_GoQF6D4WO58PoWJJ4oWuu");
+        })();
+    </script>
+
+    <!--Link to script contact.js-->
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
