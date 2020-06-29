@@ -34,7 +34,7 @@
 			<p class="lg-font contact-header">Contact</p>
 		</div>
 		<div>
-			<form action="" target="_blank" id="contact-form">
+			<form onsubmit="return sendEmail(this);"><!--Code used from CI course 'sending an email with emailjs'-->
 				<label for="fname" class="label-header">First Name*</label>
 				<div>
 					<input class="text-input" type="text" name="first_name" id="fname" required>

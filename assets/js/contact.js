@@ -1,10 +1,10 @@
 //Function to send message from contact form to emailaddress. Code used from emailjs.com
-$(".send-button").on("click", function() {
+$("#send-button").on("click", function() {
     var template_params = {
-        "first_name": "first_name_value",
-        "last_name": "last_name_value",
-        "email_address": "email_address_value",
-        "message": "message_value"
+        "first_name": contact-form.name.value,
+        "last_name": "lname",
+        "email_address": "email",
+        "message": "message"
     };
     var service_id = "default_service";
     var template_id = "twufo";
