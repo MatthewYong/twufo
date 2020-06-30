@@ -65,9 +65,9 @@
     }
 }
 
-/*Media screen max-height 400px*/
+/*Media screen max-height 450px*/
 
-@media only screen and (max-height: 400px){
+@media only screen and (max-height: 450px){
     .menu{
         font-size: 1.5rem;
         margin-top: 0.2rem;  
@@ -76,7 +76,7 @@
     }
 
     .logo{ 
-        padding: 1rem;  
+        padding: 0.5rem;  
         margin-top: 0.5rem;
     }
 }
