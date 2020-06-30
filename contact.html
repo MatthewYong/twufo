@@ -34,7 +34,8 @@
 			<p class="lg-font contact-header">Contact</p>
 		</div>
 		<div>
-			<form onsubmit="return sendEmail(this);"><!--Code used from CI course 'sending an email with emailjs'-->
+            <!--Code used from CI course 'sending an email with emailjs'-->
+			<form onsubmit="return sendEmail();">
 				<label for="fname" class="label-header">First Name*</label>
 				<div>
 					<input class="text-input" type="text" name="first_name" id="fname" required>
@@ -51,7 +52,7 @@
 				<div>
 					<textarea class="text-input sm-font" name="message" rows="6" cols="0" id="message" required></textarea>
 				</div>
-				<input id="send-button" type="submit" value="Send">
+				<button id="send-button" type="submit">Send</button>
 			</form>
 		</div>
 	</div>

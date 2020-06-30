@@ -145,10 +145,12 @@ function compareSequence() {
             if (game.computerSequence.toString() == 
             game.playerSequence.toString()) {
                 console.log("good");
+                $("#level").html("Good!");
                 $("#continue").removeClass("hide-button");
                 continueButton()
             } else {
                 console.log("wrong");
+                $("#level").html("Wrong!");
                 $("#retry").removeClass("hide-button");
                 retryButton()
             };
