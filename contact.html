@@ -35,7 +35,7 @@
 		</div>
 		<div>
             <!--Code used from CI course 'sending an email with emailjs'-->
-			<form onsubmit="return sendEmail();">
+			<form onsubmit="return sendEmail(this);">
 				<label for="fname" class="label-header">First Name*</label>
 				<div>
 					<input class="text-input" type="text" name="first_name" id="fname" required>
@@ -52,7 +52,7 @@
 				<div>
 					<textarea class="text-input sm-font" name="message" rows="6" cols="0" id="message" required></textarea>
 				</div>
-				<button id="send-button" type="submit">Send</button>
+				<input id="send-button" type="submit" value="Send">
 			</form>
 		</div>
 	</div>
