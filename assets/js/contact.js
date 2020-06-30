@@ -15,6 +15,7 @@ function sendEmail(Form) {
     }, function(error) {
         alert("Failed", error)
     });
-    return false
+    Form.reset();
+    return false;
 };
 
