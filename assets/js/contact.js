@@ -1,10 +1,10 @@
 //Function to send message from contact form to emailaddress. Code used from emailjs.com "template-code-sample"
-function sendEmail(Form) {
+function sendEmail(messageForm) {
     var template_params = {
-            "first_name": Form.fname.value,
-            "last_name": Form.lname.value,
-            "email_address": Form.email.value,
-            "message": Form.message.value,  
+            "first_name": messageForm.fname.value,
+            "last_name": messageForm.lname.value,
+            "email_address": messageForm.email.value,
+            "message": messageForm.message.value,  
         };
 
     var service_id = "gmail";
@@ -15,7 +15,7 @@ function sendEmail(Form) {
     }, function(error) {
         alert("Failed", error)
     });
-    Form.reset();
+    messageForm.reset();
     return false;
 };
 
