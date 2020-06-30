@@ -9,7 +9,12 @@ function sendEmail(Form) {
 
     var service_id = "gmail";
     var template_id = "twufo";
-    emailjs.send(service_id, template_id, template_params);
-    return false;
+    emailjs.send(service_id, template_id, template_params)
+     .then(function(response) {
+         alert("Message Sent!", response)
+    }, function(error) {
+        alert("Failed", error)
+    });
+    return false
 };
 
