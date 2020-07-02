@@ -1,10 +1,10 @@
 //Variables
 var game = {
-computerSequence: [],
-playerSequence: [],
-runningSequence: [],
-level: 0,
-round: 1
+    computerSequence: [],
+    playerSequence: [],
+    runningSequence: [],
+    level: 0,
+    round: 1
 };
 
 //Audio button to turn on or mute sound
@@ -23,8 +23,8 @@ $("#mute").click(function() {
 
 //Start button starts the game
 $("#start").click(function() {
-        newGame();
-        $("#start").addClass("hide-button");
+    newGame();
+    $("#start").addClass("hide-button");
 });
 
 //Resets all the values and calls function 'computerTurn'
