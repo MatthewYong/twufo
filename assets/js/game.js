@@ -4,7 +4,7 @@ computerSequence: [],
 playerSequence: [],
 runningSequence: [],
 level: 0,
-round: 0
+round: 1
 };
 
 //Audio button to turn on or mute sound
@@ -21,30 +21,24 @@ $("#mute").click(function() {
 });
 
 
-//When START button is clicked: start a new game by calling
+//Start button starts the game
 $("#start").click(function() {
         newGame();
         $("#start").addClass("hide-button");
 });
 
-//Resets all the values and calls function 'round'
+//Resets all the values and calls function 'computerTurn'
 function newGame() {
     game.computerSequence = [];
     game.playerSequence = [];
     game.runningSequence = [];
-    game.round = 1;
     game.level = 1;
-    round();
-};
-
-//Increment the text and level by 1 and calls function 'computerTurn' 
-function round() {
-    $("#level").text("Level" + " " + game.level);    
     computerTurn();
 };
 
 //Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
 function computerTurn() {
+    $("#level").text("Level" + " " + game.level);    
     setTimeout(function() {
         for (i=0; i < game.round; i++) {
             game.computerSequence.push(Math.floor(Math.random() * 5));
@@ -53,7 +47,7 @@ function computerTurn() {
             iconFlash(i);
         };
         console.log(game.computerSequence);
-    },500);
+    },1000);
 };    
 
 //This function will access each value in the computerSequence array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
@@ -168,7 +162,7 @@ function continueButton() {
         game.playerSequence = [];
         game.runningSequence = [];
         game.level++;
-        round()
+        computerTurn()
     });
 };
 
