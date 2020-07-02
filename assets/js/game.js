@@ -50,7 +50,7 @@ function computerTurn() {
     },1000);
 };    
 
-//This function will access each value in the computerSequence array, add a delay between the functions and changes the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
+//This function will access each value in the computerSequence array, add a delay between the functions and change the color of the icon. Code derived from https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/
 function iconFlash (i) {
     setTimeout(function() {
         if (game.computerSequence[i] == 0) {
@@ -83,7 +83,7 @@ function iconFlash (i) {
     },1200*i);
 };
 
-//When an icon is clicked, push to the integer to playerSequence array, calls one of the function icon, wait 750ms before continue to next click or next function
+//When an icon is selected, push to the integer to playerSequence array, calls one of the function icon and waits before continue to the next click or function
 function playerTurn() {
     $(".game-symbol").on("click", function() {
         $(this).addClass("rotate");
@@ -130,7 +130,6 @@ function playerTurn() {
     });
 };
 
-
 //Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
 
 function compareSequence() {
@@ -154,7 +153,7 @@ function compareSequence() {
     };    
 };
 
-//When CONTINUE button is clicked, increment the level by 1 and reset the button by off function
+//When CONTINUE button is selected, increment the level by 1 and reset the button by off function
 function continueButton() {
     $("#continue").click(function() {
         $("#continue").addClass("hide-button");
@@ -166,7 +165,7 @@ function continueButton() {
     });
 };
 
-//When RETRY button is clicked, start a new game
+//When RETRY button is selected, start a new game
 function retryButton() {
     $("#retry").click(function() {
         $("#retry").addClass("hide-button");
@@ -230,18 +229,5 @@ function iconFive() {
         $(".fas").removeClass("icon-effect")
         }, 600);
     };
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
