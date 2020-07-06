@@ -1,6 +1,6 @@
 //Testing the volume button
-describe("Volume button", function() {
-    it("should change the icon and sound", function() {
-        expect($("#volume").toHaveClass("hide-button"))
-    })
-})
+describe("When volume icon is visible", function() {
+    it("Should have show volume icon and have sound", function() {
+        expect($("#volume")).not.toHaveClass("hide-button");
+    });
+});
