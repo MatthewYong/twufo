@@ -12,5 +12,19 @@ describe("When volume button is clicked", function() {
     });
 });
 
+//Testing the mute button
+describe("When mute button is clicked", function() {
+    it("should hide mute, show volume button and add sound", function() {
+        setFixtures(`
+            <div id="volume"></div>
+            <div id="mute"></div>);            
+            <audio></audio>`);
+        volumeOn();
+        expect($("#volume")).not.toHaveClass("hide-button");
+        expect($("#mute")).toHaveClass("hide-button");
+        expect($("audio")).toHaveProp("muted", false);
+    });
+});
+
 
 
