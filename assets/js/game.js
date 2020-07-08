@@ -16,7 +16,7 @@ function volumeOff() {
     $("#volume").addClass("hide-button");
     $("#mute").removeClass("hide-button");
     $("audio").prop("muted", true);    
-}
+};
 
 $("#mute").click(function() {
     volumeOn();
