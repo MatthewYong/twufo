@@ -26,5 +26,14 @@ describe("When mute button is clicked", function() {
     });
 });
 
+//Testing the start button
+describe("When start button is clicked", function() {
+    it("should hide start button", function() {
+        setFixtures(`
+            <div id="start"></div>`);
+        newGame();
+        expect($("#start")).toHaveClass("hide-button");
+    });
+});
 
 

@@ -31,11 +31,11 @@ function volumeOn() {
 //Start button starts the game
 $("#start").click(function() {
     newGame();
-    $("#start").addClass("hide-button");
 });
 
 //Resets all the values and calls function 'computerTurn'
 function newGame() {
+    $("#start").addClass("hide-button");
     game.computerSequence = [];
     game.playerSequence = [];
     game.runningSequence = [];
