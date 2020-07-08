@@ -9,17 +9,20 @@ var game = {
 
 //Audio button to turn on or mute sound
 $("#volume").click(function() {
+    volume();
+});
+
+function volume() {
     $("#volume").addClass("hide-button");
     $("#mute").removeClass("hide-button");
-    $("audio").prop("muted", true);
-});
+    $("audio").prop("muted", true);    
+}
 
 $("#mute").click(function() {
     $("#volume").removeClass("hide-button");
     $("#mute").addClass("hide-button");
     $("audio").prop("muted", false);
 });
-
 
 //Start button starts the game
 $("#start").click(function() {
