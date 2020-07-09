@@ -57,9 +57,28 @@ describe("When continue button is clicked", function() {
             <div id="continue"></div>`);
     });
 
-    it("should hide continue button and continue game", function() {
-            cont();
-            expect($('#continue')).toHaveClass("hide-button");   
+    it("should hide continue button and reset values", function() {
+        cont();
+        expect($('#continue')).toHaveClass("hide-button");
+        expect($('#continue')).toHaveProp("click", off);
+        expect(game.playerSequence.length).toEqual(0);
+        expect(game.runningSequence.length).toEqual(0);               
     });
 });
 
+//Testing the retry button
+describe("When retry button is clicked", function() {
+    beforeEach(function() {
+        setFixtures(`
+            <div id="retry"></div>);
+            <div id="start"></div>);
+            <div id="level"></div>`);            
+    });
+
+    it("should hide continue button and reset values", function() {
+        retry();
+        expect($('#retry')).toHaveClass("hide-button");
+        expect($('#start')).not.toHaveClass("hide-button");  
+        expect($('#level')).toContainText("Level 0");                     
+    });
+});
