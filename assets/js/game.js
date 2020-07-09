@@ -147,12 +147,16 @@ function compareSequence() {
                 console.log("good");
                 $("#level").html("Good!");
                 $("#continue").removeClass("hide-button");
-                continueButton()
+                $("#continue").click(function() {
+                    cont();
+                });
             } else {
                 console.log("wrong");
                 $("#level").html("Wrong!");
                 $("#retry").removeClass("hide-button");
-                retryButton()
+                $("#retry").click(function() {
+                    retry();
+                });
             };
             //This prevents the player from clicking while the computerSequence is running
             $(".game-symbol").off("click")
@@ -161,24 +165,20 @@ function compareSequence() {
 };
 
 //When CONTINUE button is selected, increment the level by 1 and reset the button by off function
-function continueButton() {
-    $("#continue").click(function() {
+function cont() {    
         $("#continue").addClass("hide-button");
         $("#continue").off("click");
         game.playerSequence = [];
         game.runningSequence = [];
         game.level++;
-        computerTurn()
-    });
+        computerTurn()    
 };
 
 //When RETRY button is selected, start a new game
-function retryButton() {
-    $("#retry").click(function() {
+function retry() {
         $("#retry").addClass("hide-button");
         $("#start").removeClass("hide-button");
         $("#level").text("Level 0");
-    });
 };
 
 //Functions to set icons to flash and play an audio

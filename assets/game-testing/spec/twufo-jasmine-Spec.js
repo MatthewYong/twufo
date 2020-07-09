@@ -41,3 +41,13 @@ describe("When start button is clicked", function() {
 });
 
 
+
+//Testing the continue button
+describe("When continue button is clicked", function() {
+    it("should hide continue button and continue game", function() {
+            setFixtures(`<div id="continue"></div>`);
+            cont();
+            expect($('#continue')).toHaveClass("hide-button");   
+    });
+});
+
