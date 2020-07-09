@@ -1,10 +1,13 @@
 //Testing the volume button
 describe("When volume button is clicked", function() {
-    it("should hide volume, show mute button and mute sound", function() {
+    beforeEach(function() {
         setFixtures(`
             <div id="volume"></div>
             <div id="mute"></div>);            
             <audio></audio>`);
+    });
+    
+    it("should hide volume, show mute button and mute sound", function() {
         volumeOff();
         expect($("#volume")).toHaveClass("hide-button");
         expect($("#mute")).not.toHaveClass("hide-button");
@@ -14,11 +17,14 @@ describe("When volume button is clicked", function() {
 
 //Testing the mute button
 describe("When mute button is clicked", function() {
-    it("should hide mute, show volume button and add sound", function() {
+    beforeEach(function() {
         setFixtures(`
             <div id="volume"></div>
             <div id="mute"></div>);            
             <audio></audio>`);
+    });    
+
+    it("should hide mute, show volume button and add sound", function() {
         volumeOn();
         expect($("#volume")).not.toHaveClass("hide-button");
         expect($("#mute")).toHaveClass("hide-button");
@@ -28,9 +34,12 @@ describe("When mute button is clicked", function() {
 
 //Testing the start button
 describe("When start button is clicked", function() {
-    it("should hide start button and reset all values", function() {
+    beforeEach(function() {
         setFixtures(`
             <div id="start"></div>`);
+    });    
+
+    it("should hide start button and reset all values", function() {
         newGame();
         expect($("#start")).toHaveClass("hide-button");
         expect(game.computerSequence.length).toEqual(0);
@@ -41,11 +50,14 @@ describe("When start button is clicked", function() {
 });
 
 
-
 //Testing the continue button
 describe("When continue button is clicked", function() {
+    beforeEach(function() {
+        setFixtures(`
+            <div id="continue"></div>`);
+    });
+
     it("should hide continue button and continue game", function() {
-            setFixtures(`<div id="continue"></div>`);
             cont();
             expect($('#continue')).toHaveClass("hide-button");   
     });
