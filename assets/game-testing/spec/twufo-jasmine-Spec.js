@@ -60,7 +60,7 @@ describe("When continue button is clicked", function() {
     it("should hide continue button and reset values", function() {
         cont();
         expect($('#continue')).toHaveClass("hide-button");
-        expect($('#continue')).toHaveProp("click", off);
+        expect($('#continue')).not.toHaveAttr("click");
         expect(game.playerSequence.length).toEqual(0);
         expect(game.runningSequence.length).toEqual(0);               
     });
@@ -82,3 +82,4 @@ describe("When retry button is clicked", function() {
         expect($('#level')).toContainText("Level 0");                     
     });
 });
+

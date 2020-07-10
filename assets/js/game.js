@@ -166,25 +166,26 @@ function compareSequence() {
 
 //When CONTINUE button is selected, increment the level by 1 and reset the button by off function
 function cont() {    
-        $("#continue").addClass("hide-button");
-        $("#continue").off("click");
-        game.playerSequence = [];
-        game.runningSequence = [];
-        game.level++;
-        computerTurn()    
+    $("#continue").addClass("hide-button");
+    $("#continue").off("click");
+    game.playerSequence = [];
+    game.runningSequence = [];
+    game.level++;
+    computerTurn()    
 };
 
 //When RETRY button is selected, start a new game
 function retry() {
-        $("#retry").addClass("hide-button");
-        $("#start").removeClass("hide-button");
-        $("#level").text("Level 0");
+    $("#retry").addClass("hide-button");
+    $("#start").removeClass("hide-button");
+    $("#level").text("Level 0");
 };
 
 //Functions to set icons to flash and play an audio
 function iconOne() {
     var audio = document.getElementById("audioRocket");
     audio.play();
+    //$('#audioRocket').get(0).play()
     $(".icon-rocket").addClass("icon-effect"); 
     $(".icon-rocket").css("color", "rgb(239, 243, 28)")    
     setTimeout(function() {
