@@ -49,7 +49,6 @@ describe("When start button is clicked", function() {
     });
 });
 
-
 //Testing the continue button
 describe("When continue button is clicked", function() {
     beforeEach(function() {

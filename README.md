@@ -102,8 +102,6 @@ A summary of the features were described in the scope plane. This chapter will e
 
 ## Deployment
 
-## Deployment
-
 ### GitHub Pages
 To publish the website, the following steps needs to be taken:
 
@@ -115,7 +113,7 @@ To publish the website, the following steps needs to be taken:
 
 ![alt text][deploy]
 
-[deploy]:
+[deploy]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-deployment.JPG
 
 For more information on how to deploy a website on GitHub, please visit [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
@@ -136,8 +134,16 @@ To make a clone of the website and work locally, the following steps needs to be
     - Fontawesome.com
 
 ### Source of codes
+The following codes were inspired or taken from:
+- [Idea](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
 
+- [Adding a delay between flashing icons](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Idea used in file game.js on code line 60
 
+- [Comparison of Player and Computer sequence](https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s): Idea used in file game.js on code line 142
+
+- [Contact form JavaScript](https://www.emailjs.com/docs/sdk/send-form/): Code used in file contact.js on code line 11 for sending email with emailjs.com
+
+- [Contact form HTML](https://courses.codeinstitute.net/): Code used in contact.html code line 41 for sending email with emailjs.com
 
 ### Acknowledgement
 The completion of this project could not have been possible without support and the extensive knowledge of other people. My appreciation goes to:
