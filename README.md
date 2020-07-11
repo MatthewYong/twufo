@@ -1,7 +1,7 @@
 # TWUFO | A Memory Game
 Milestone Project 2 - Code Institute 
 
-This project is an interactive frontend website. The website contains a memory game, instructions and a contact form. The purpose of this website is to attracht and entertain the end-user.
+TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page,a contact form and the actual game. The result of this project is an interactive frontend website. 
 
 ![alt text][logo]
 
@@ -33,8 +33,8 @@ The scope plane defines the features that are and are not possible to include in
 | Features (included) | Future features (not included)|
 | :------------- | :---------- |
 |1. Landing page with navigation to game, instructions and contact form | 1. Ability to pause the game|
-|2. Game page | 2. Leader board|
-|3. Audio on/off button|
+|2. Game page | 2. Ability to replay the computer sequence|
+|3. Audio on/off button| 3. Leader board
 |4. Instructions page | 
 |5. Contact form|  
 
@@ -76,6 +76,24 @@ Background: Earth from Space | To be in line with the space theme |
 Contrast ratio: 9.98 | A high ratio to express the visibility of the text (source: contrast-ratio.com)|
 
 
+## Features
+A summary of the features were described in the scope plane. This chapter will explain what the purpose is of each feature and what will left to implement for the future.
+
+### Existing Features
+| Features (included) |Explanation|
+| :------------- | :---------- |
+|1. Start button| 1. The start button allows users to to start the game|
+|2. Back button| 2. The back button allows users to return to the landing page|
+|3. Audio button| The audio button let users to control the sound of the game|
+|4. Game icons| The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
+|5. Instructions page| The instructions page allows users to read the instructions of the game|
+|6. Contact form| The contact form allows users to contact the owner of the website for questions or remarks|
 
 
+### Features Left to Implement
+| Features (not included) | Explanation|
+| :------------- | :---------- |
+|1. Ability to pause the game | This feature allows users to return to the main menu or to access the contact form while playing the game|
+|2. Ability to replay the computer sequence | This feature allows users to repeat the computer's sequence. This can also be described as an 'easy' mode
+|3. Leader board | This feature allows users to compete with other users by keeping track of a high score|
 
