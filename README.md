@@ -66,8 +66,14 @@ Below you can find an example of a wireframe of the landing page.
 
 
 ### Surface Plane
-The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to attract customers, but also needs to reflect the calmness during the dining experience. The following design style has been used:
+The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to encourage users to play the game. The website has a 'space' theme and must give the user a futuristic experience. The following design style has been used:
 
+| Design Style | Design Choice|
+| :------------- | :---------- |
+Font: Orbitron | A clear font to give the website a futuristic look|
+Text color: #00FF7F | A green bright 'alienish' colour |
+Background: Earth from Space | To be in line with the space theme |
+Contrast ratio: 9.98 | A high ratio to express the visibility of the text (source: contrast-ratio.com)|
 
 
 
