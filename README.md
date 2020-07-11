@@ -95,13 +95,48 @@ A summary of the features were described in the scope plane. This chapter will e
 
 
 ## Technologies Used
+The following technologies have been used to achieve this project:
+
+Resources
+- [HTML](https://www.w3.org/TR/html52/) is used as the main writing language of this project
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) is used for styling the HTML text
+- [JavaScript](https://www.javascript.com/) is used for coding the user interaction, the contact form and the Jasmine testing framework
+
+Styling
+- [FontAwesome](https://fontawesome.com/) is used to improve the visual design of the website and is used for the main icons in the game
+- [Contrast-ratio.com](https://contrast-ratio.com/) is used to test the visibility of the text with the background color
+- [Google fonts](https://fonts.google.com/) is used for the style the font
+
+Framework & API
+- [Bootstrap](https://getbootstrap.com/) is used for its framework. Specifically, for this project: the grid system in the game
+- [JQuery](https://jquery.com/) is used to simplify codes
+- [Jasmine](https://jasmine.github.io/) is used to test certain codes in game.js
+- [Jasmine-JQuery](https://developers.google.com/maps/documentation/javascript/markers) is used for the jasmine frame work to recognise JQuery commands
+
+Images
+- [Adobe Photoshop CC 2019](https://www.adobe.com/uk/products/photoshop) is used to crop the images and delete white background
+- [Tinyjpg.com](https://tinyjpg.com/) is used to reduce the size of the JPG images
+- [Tinypng.com](https://tinypng.com/) is used to reduce the size of the PNG images
+
+Sound
+- [Beepbox.co](https://beepbox.co/) is used create sound effect in the game
+
+Wireframe
+- [Balsamic](https://balsamiq.com/) is used to draw wireframes for the skeleton plane and making the visual design of the structure plane
+
+Testing
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) is used to test the responsiveness of the website and to debug any problems
+- [Jasmine](https://jasmine.github.io/) is used to test certain codes in game.js
+- [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) is used to determine any overflow on the website
+- [Validator.w3.org](https://validator.w3.org/) is used to validate the HTML code
+- [Jigsaw.w3.org/css-validator](https://jigsaw.w3.org/css-validator/validator.html.en) is used to validate the CSS code
+- [JSHint](https://jshint.com/) is used to validate the JavaScript code
 
 
 ## Testing
 
 
 ## Deployment
-
 ### GitHub Pages
 To publish the website, the following steps needs to be taken:
 
@@ -134,7 +169,7 @@ To make a clone of the website and work locally, the following steps needs to be
     - Fontawesome.com
 
 ### Source of codes
-The following codes were inspired or taken from:
+The following codes were inspired or taken for:
 - [Idea](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
 
 - [Adding a delay between flashing icons](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Idea used in file game.js on code line 60
