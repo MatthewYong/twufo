@@ -47,7 +47,7 @@ The structure plane defines the information architecture and interaction design 
 
 ![alt text][hubspoke]
 
-[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.png
+[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.jpg
 
 ### Skeleton Plane
 The skeleton plane defines a basic visual design of the website through, for example, a wireframe. The wireframes for this project are made with Balsamiq can be downloaded from the following link:
@@ -164,13 +164,12 @@ To make a clone of the website and work locally, the following steps needs to be
 - All written text in the website is entirely written by myself.
 
 ### Media
-- All photos & icons for this project are used from:
+- All photos for this project are used from:
     - Unsplash.com
-    - Fontawesome.com
 
 ### Source of codes
 The following codes were inspired or taken for:
-- [Idea](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
+- [The beginning](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
 
 - [Adding a delay between flashing icons](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Idea used in file game.js on code line 60
 
