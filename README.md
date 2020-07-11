@@ -102,6 +102,29 @@ A summary of the features were described in the scope plane. This chapter will e
 
 ## Deployment
 
+## Deployment
+
+### GitHub Pages
+To publish the website, the following steps needs to be taken:
+
+1. Open GitHub and go to your site's **'Repositories'**
+2. Go to **'Settings'**
+3. Scroll down until you see **'GitHub Pages'**
+4. Under GitHub pages, click on the dropdown under **'Source'** and select the **'Master Branch'** option
+5. A green box should appear with the following message **'Your site is published at https://matthewyong.github.io/twufo/'**
+
+![alt text][deploy]
+
+[deploy]:
+
+For more information on how to deploy a website on GitHub, please visit [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+
+### Cloning a Repository 
+To make a clone of the website and work locally, the following steps needs to be taken:
+1. Go to the main page of the GitHub repository and click on the dropdown menu **'Clone or download'**
+2. Copy the URL and go to your local IDE (Integrated Development Environment)
+3. In the terminal of your IDE type in **'git clone'** and the paste the URL copied from step 2 
+4. Press **Enter** and the clone will be created
 
 ## Credits
 ### Content
