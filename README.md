@@ -7,6 +7,7 @@ TWUFO is a memory game build to entertain the user and test the developer's know
 
 [logo]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-landing-device.png
 
+
 ## UX
 To understand how to develop a game that will attract and entertain the end-user, we need to define the development process of each stage. This can be done by analyzing and breaking down the development process of the project into five planes:
 
@@ -26,7 +27,6 @@ As a developer I want to:
 2. Entertain myself and the end-user by playing the game
 3. Gameplayers to contact me for questions or remarks
 
-
 ### Scope Plane
 The scope plane defines the features that are and are not possible to include in the website. This will be further in detail explained in the next chapter. A summary of the included and not included features are:
 
@@ -38,7 +38,6 @@ The scope plane defines the features that are and are not possible to include in
 |4. Instructions page | 
 |5. Contact form|  
 
-
 ### Structure Plane
 The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
 
@@ -49,7 +48,6 @@ The structure plane defines the information architecture and interaction design 
 ![alt text][hubspoke]
 
 [hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.png
-
 
 ### Skeleton Plane
 The skeleton plane defines a basic visual design of the website through, for example, a wireframe. The wireframes for this project are made with Balsamiq can be downloaded from the following link:
@@ -63,7 +61,6 @@ Below you can find an example of a wireframe of the landing page.
 ![alt text][wireframe]
 
 [wireframe]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-skeletonplane.jpg
-
 
 ### Surface Plane
 The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to encourage users to play the game. The website has a 'space' theme and must give the user a futuristic experience. The following design style has been used:
@@ -80,15 +77,14 @@ Contrast ratio: 9.98 | A high ratio to express the visibility of the text (sourc
 A summary of the features were described in the scope plane. This chapter will explain what the purpose is of each feature and what will left to implement for the future.
 
 ### Existing Features
-| Features (included) |Explanation|
+| Features (included) | Explanation|
 | :------------- | :---------- |
-|1. Start button| 1. The start button allows users to to start the game|
-|2. Back button| 2. The back button allows users to return to the landing page|
-|3. Audio button| The audio button let users to control the sound of the game|
-|4. Game icons| The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
-|5. Instructions page| The instructions page allows users to read the instructions of the game|
-|6. Contact form| The contact form allows users to contact the owner of the website for questions or remarks|
-
+|1. Start button | 1. The start button allows users to to start the game|
+|2. Back button | 2. The back button allows users to return to the landing page|
+|3. Audio button | The audio button let users to control the sound of the game|
+|4. Game icons | The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
+|5. Instructions page | The instructions page allows users to read the instructions of the game|
+|6. Contact form | The contact form allows users to contact the owner of the website for questions or remarks|
 
 ### Features Left to Implement
 | Features (not included) | Explanation|
@@ -97,3 +93,36 @@ A summary of the features were described in the scope plane. This chapter will e
 |2. Ability to replay the computer sequence | This feature allows users to repeat the computer's sequence. This can also be described as an 'easy' mode
 |3. Leader board | This feature allows users to compete with other users by keeping track of a high score|
 
+
+## Technologies Used
+
+
+## Testing
+
+
+## Deployment
+
+
+## Credits
+### Content
+- All written text in the website is entirely written by myself.
+
+### Media
+- All photos & icons for this project are used from:
+    - Unsplash.com
+    - Fontawesome.com
+
+### Source of codes
+
+
+
+### Acknowledgement
+The completion of this project could not have been possible without support and the extensive knowledge of other people. My appreciation goes to:
+- Gerard (Gerry) McBride, my mentor, for giving me me tips on how to start with coding a memory game, guidance throughout the project and giving me useful tips to finish a good project
+- Tutors from Code Institute, for guiding me through some tough codes in JavaScript
+- Code Institute, for the valuable lessons through videos and exercises
+- Stack Overflow, for giving me code support 
+- Slack community, for reviewing my project, giving me new ideas and code support. In particular Anna_ci for her tips on how to deploy the website.
+
+## Disclaimer
+This website is for educational purposes only. All content and images are illustrative.
