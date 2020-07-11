@@ -32,7 +32,7 @@ The scope plane defines the features that are and are not possible to include in
 
 | Features (included) | Future features (not included)|
 | :------------- | :---------- |
-|1. Landing page: with navigation to game, instructions and contact form | 1. Ability to pause the game|
+|1. Landing page with navigation to game, instructions and contact form | 1. Ability to pause the game|
 |2. Game page | 2. Leader board|
 |3. Audio on/off button|
 |4. Instructions page | 
@@ -42,7 +42,13 @@ The scope plane defines the features that are and are not possible to include in
 ### Structure Plane
 The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
 
+- First impression of the website needs to be simple and clear as possible
+- No more than two clicks are required for the user to reach a page
+- The type of information architecture that will be used is the ‘Hub and Spoke, see below:
 
+![alt text][hubspoke]
+
+[hubspoke]: 
 
 ### Skeleton Plane
 The skeleton plane defines a basic visual design of the website through, for example, a wireframe. The wireframes for this project are made with Balsamiq can be downloaded from the following link:
