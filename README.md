@@ -12,10 +12,19 @@ To understand how to develop a game that will attract and entertain the end-user
 
 
 ### Strategy Plane & User Stories
-The strategy plane defines the business objective and the user needs (goals). The goals for this project are defined as:
+The strategy plane defines the website's objective and the user needs (goals), which can be interpreted as user stories:
 
+#### User Stories
+As a game player I want to:
+1. Enjoy playing the game
+2. Read instructions that tells me how to play the game
+3. Contact the owner of the website
+4. See my high score
 
-
+As a developer I want to:
+1. Gain more knowledge on JavaScript
+2. Entertain myself and the end-user by playing the game
+3. Gameplayers to contact me for questions or remarks
 
 
 ### Scope Plane
