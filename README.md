@@ -198,11 +198,11 @@ For this project Jasmine has been used for testing the end result of the code. H
 
 #### Button Test
 - To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
-- Jasmine testing has been carried out for buttons
-- The result have all passed and can be found below:
-![alt text][test-result]
+- Jasmine testing has been carried out specifically for buttons
+- The results have all passed and can be found below:
+![alt text][result]
 
-[test-result]: 
+[result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-jasmine-results.JPG
 
 ### Browser and Mobile Devices
 All of the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found in regard to the responsiveness, overflow and the functionality.
@@ -261,11 +261,12 @@ To make a clone of the website and work locally, the following steps needs to be
 
 ## Credits
 ### Content
-- All written text in the website is entirely written by myself.
+- All text in the website is entirely written by myself.
 
 ### Media
 - All photos for this project are used from:
-    - Unsplash.com
+    - [Unsplash.com](https://unsplash.com)
+
 
 ### Source of codes
 The following codes were inspired or taken for:
