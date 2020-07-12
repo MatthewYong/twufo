@@ -6,6 +6,7 @@ function sendEmail(messageForm) {
         "email_address": messageForm.email.value,
         "message": messageForm.message.value,  
     };
+    
     var service_id = "gmail";
     var template_id = "twufo";
     emailjs.send(service_id, template_id, template_params)

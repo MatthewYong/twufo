@@ -1,28 +1,43 @@
 # TWUFO | A Memory Game
 Milestone Project 2 - Code Institute 
 
-TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page,a contact form and the actual game. The result of this project is an interactive frontend website. 
+TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page, a contact form and the actual memory game. The result of this project is an interactive frontend website. 
 
 ![alt text][logo]
 
 [logo]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-landing-device.png
+
+## Table of Contents
+- [UX](#ux)
+  * [Strategy Plane](#strategy-plane)
+  * [Scope Plane](#scope-plane)
+  * [Structure Plane](#structure-plane)
+  * [Skeleton Plane](#skeleton-plane)
+  * [Surface Plane](#surface-plane)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Key Issues](#key-issues)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
 
 
 ## UX
 To understand how to develop a game that will attract and entertain the end-user, we need to define the development process of each stage. This can be done by analyzing and breaking down the development process of the project into five planes:
 
 
-### Strategy Plane & User Stories
+### Strategy plane
 The strategy plane defines the website's objective and the user needs (goals), which can be interpreted as user stories:
 
 #### User Stories
-As a game player I want to:
+As a **game player** I want to:
 1. Enjoy playing the game
 2. Read instructions that tells me how to play the game
 3. Contact the owner of the website
 4. See my high score
 
-As a developer I want to:
+As a **developer** I want to:
 1. Gain more knowledge on JavaScript
 2. Entertain myself and the end-user by playing the game
 3. Gameplayers to contact me for questions or remarks
@@ -137,15 +152,46 @@ Testing
 ## Testing
 The following test scenarios have been carried out:
 
-- Navigation menu
-    1. Go to the navigation menu on the landing page
-    2. Click on one of the titles on the navigation bar and verify that:
-        - The logo **'Saitama Dainingu'** will redirect to the landing page
-        - **'Home'** will redirect to the landing page
-        - **'About'** will redirect to the about page
-        - **'Gallery'** will redirect to the gallery page
-        - **'Contact'** will scroll the page down to the contact section
-    3. Verify that step 2 will work on the about and the gallery page
+### Navigation test
+- Access and leaving the game page
+    1. On the landing page click on **PLAY**    
+    2. Verified that this will open the game page
+    3. Click on the arrow button
+    4. Verified that the page will return to the index page
+
+- Access and leaving the instructions page
+    1. Go to the landing page click on **INSTRUCTIONS** 
+    2. Verified that this will open the instructions page
+    3. Click on the 'X' icon located at the top right corner of the window
+    4. Verified that the page will return to the index page
+
+- Access and leaving the contact page
+    1. Go to the landing page click on **CONTACT** 
+    2. Verified that this will open the contact page
+    3. Click on the 'X' icon located at the top right corner of the window
+    4. Verified that the page will return to the index page
+
+### Contact Form
+- Sending a message through contact form
+    1. Fill in all the rows with the required information
+    2. Click on send button
+    3. Verified that an alert message will pop up
+    4. Verified that sent message has been received
+
+- Overwriting variables through argument in function sendEmail
+    1. Fill in all 
+
+
+
+### Game play
+
+
+### Jasmine Testing
+
+    - Jasmine testing has been carried out for buttons
+    - Results see below
+
+
 
 ### Browser and Mobile Devices
 All of the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found in regard to the responsiveness, overflow and the functionality.
