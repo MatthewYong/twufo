@@ -261,7 +261,8 @@ To make a clone of the website and work locally, the following steps needs to be
 
 ## Credits
 ### Content
-- All text in the website is entirely written by myself.
+- All text in the website is entirely written by myself
+- To maintain consistency through all my Code Institute projects, a similar structure for the readme file has been used from my previous project
 
 ### Media
 - All photos for this project are used from:
@@ -269,16 +270,16 @@ To make a clone of the website and work locally, the following steps needs to be
 
 
 ### Source of codes
-The following codes were inspired or taken for:
-- [The beginning](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
+The following codes were inspired or taken from:
+- [YouTube](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
 
-- [Adding a delay between flashing icons](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Idea used in file game.js on code line 60
+- [YouTube](https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s): Comparison of Player and Computer sequence. Idea used in file game.js on code line 142
 
-- [Comparison of Player and Computer sequence](https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s): Idea used in file game.js on code line 142
+- [Geeksforgeeks](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Adding a delay between flashing icons. Idea used in file game.js on code line 60
 
-- [Contact form JavaScript](https://www.emailjs.com/docs/sdk/send-form/): Code used in file contact.js on code line 11 for sending email with emailjs.com
+- [emailJS](https://www.emailjs.com/docs/sdk/send-form/): For API use in contact form. Code used in file contact.js on code line 11
 
-- [Contact form HTML](https://courses.codeinstitute.net/): Code used in contact.html code line 41 for sending email with emailjs.com
+- [Code Institute](https://courses.codeinstitute.net/): For API use in contact form. Code used in contact.html code line 41
 
 ### Acknowledgement
 The completion of this project could not have been possible without support and the extensive knowledge of other people. My appreciation goes to:
