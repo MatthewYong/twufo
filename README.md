@@ -48,10 +48,10 @@ The scope plane defines the features that are and are not possible to include in
 | Features (included) | Future features (not included)|
 | :------------- | :---------- |
 |1. Landing page with navigation to game, instructions and contact form | 1. Ability to pause the game|
-|2. Game page | 2. Ability to replay the computer sequence|
+|2. Game page | 2. Ability to replay the computer sequence |
 |3. Audio on/off button| 3. Leader board
-|4. Instructions page | 
-|5. Contact form|  
+|4. Instructions | 
+|5. Contact form |  
 
 ### Structure Plane
 The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
@@ -98,7 +98,7 @@ A summary of the features were described in the scope plane. This chapter will e
 |1. Start button | 1. The start button allows users to to start the game|
 |2. Back button | 2. The back button allows users to return to the landing page|
 |3. Audio button | 3. The audio button let users to control the sound of the game|
-|4. Game icons | 4. The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
+|4. Game icons | 4. The five game icons allows users to interact with the game|
 |5. Instructions page | 5. The instructions page allows users to read the instructions of the game|
 |6. Contact form | 6. The contact form allows users to contact the owner of the website for questions or remarks|
 
@@ -188,11 +188,15 @@ The following test scenarios have been carried out:
 3. Verified that sent message has been received and that text has been overwritten
 
 ### Game Play Testing
-#### Waiting for turn
+#### Waiting for player's turn
+1. Click on Start button to start the game
+2. While the computer is flashing the icons try and click any other icons
+3. Verified that nothing will happen until the computer has finished it's sequence
 
-#### 
-
-
+#### Waiting for icon rotation
+1. Click on Start button and wait for computer's turn to finish
+2. Select an icon and while the icon is rotating click another icon
+3. Verified that nothing will happen until the rotation of each icon has finished
 
 ### Jasmine Testing
 For this project Jasmine has been used for testing the end result of the code. However, Jasmine should have been used as a Test Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
