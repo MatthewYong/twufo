@@ -180,6 +180,7 @@ The following test scenarios have been carried out:
 
 #### Overwriting variable messageForm through argument in function sendEmail
 1. Set up a variable in function sendEmail as below:
+
 ![alt text][contactform]
 
 [contactform]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-contact-messageForm.JPG
