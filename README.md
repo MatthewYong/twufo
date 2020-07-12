@@ -147,6 +147,20 @@ The following test scenarios have been carried out:
         - **'Contact'** will scroll the page down to the contact section
     3. Verify that step 2 will work on the about and the gallery page
 
+### Browser and Mobile Devices
+All of the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found in regard to the responsiveness, overflow and the functionality.
+
+#### Browser Testing
+- Google Chrome - version 83.0.4103.116 (64-bit)
+- Mozilla Firefox - version 78.0.2 (64-bit)
+- Microsoft Edge - version 83.0.478.61 (64-bit)
+- Internet Explorer - version 11.719.18362.0
+
+#### Mobile Device Testing through Chrome DevTools
+- Moto G4 
+- Galaxy S5
+- iPhone 5/SE/6/7/8/Plus
+- iPad (Pro)
 
 ## Key Issues
 ### W3C Markup Validator
@@ -161,7 +175,7 @@ The following test scenarios have been carried out:
 - Errors and warnings that were found are related to Bootstrap and can be ignored
 
 ### Browser and mobile testing
-- No issues were found on Google Chrome, Mozilla Firefox and Microsoft Edge
+- No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge and Internet Explorer
 
 - No issues were found on any mobile devices
 
