@@ -148,6 +148,18 @@ The following test scenarios have been carried out:
     3. Verify that step 2 will work on the about and the gallery page
 
 
+## Key Issues
+### W3C Markup Validator
+- No errors or warnings were found on index.html, game.html, instructions.html and contact.html
+
+### W3C CSS Validator
+- No errors or warnings were found on index.css, game.css, instructions.css and contact.css
+- Errors and warnings that were found are related to Bootstrap and can be ignored
+
+### JSHint Validator
+- No errors or warnings were found on index.css, about.css and gallery.css
+- Errors and warnings that were found are related to Bootstrap and can be ignored
+
 
 
 
