@@ -47,7 +47,8 @@ The structure plane defines the information architecture and interaction design 
 
 ![alt text][hubspoke]
 
-[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.jpg
+[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.JPG
+
 
 ### Skeleton Plane
 The skeleton plane defines a basic visual design of the website through, for example, a wireframe. The wireframes for this project are made with Balsamiq can be downloaded from the following link:
@@ -81,10 +82,10 @@ A summary of the features were described in the scope plane. This chapter will e
 | :------------- | :---------- |
 |1. Start button | 1. The start button allows users to to start the game|
 |2. Back button | 2. The back button allows users to return to the landing page|
-|3. Audio button | The audio button let users to control the sound of the game|
-|4. Game icons | The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
-|5. Instructions page | The instructions page allows users to read the instructions of the game|
-|6. Contact form | The contact form allows users to contact the owner of the website for questions or remarks|
+|3. Audio button | 3. The audio button let users to control the sound of the game|
+|4. Game icons | 4. The five game icons allows users to interact with the game. The user needs to mimic a specific pattern that the computer has shown|
+|5. Instructions page | 5. The instructions page allows users to read the instructions of the game|
+|6. Contact form | 6. The contact form allows users to contact the owner of the website for questions or remarks|
 
 ### Features Left to Implement
 | Features (not included) | Explanation|
@@ -134,6 +135,20 @@ Testing
 
 
 ## Testing
+The following test scenarios have been carried out:
+
+- Navigation menu
+    1. Go to the navigation menu on the landing page
+    2. Click on one of the titles on the navigation bar and verify that:
+        - The logo **'Saitama Dainingu'** will redirect to the landing page
+        - **'Home'** will redirect to the landing page
+        - **'About'** will redirect to the about page
+        - **'Gallery'** will redirect to the gallery page
+        - **'Contact'** will scroll the page down to the contact section
+    3. Verify that step 2 will work on the about and the gallery page
+
+
+
 
 
 ## Deployment
