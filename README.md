@@ -99,7 +99,7 @@ A summary of the features were described in the scope plane. This chapter will e
 |2. Back button | 2. The back button allows users to return to the landing page|
 |3. Audio button | 3. The audio button let users to control the sound of the game|
 |4. Game icons | 4. The five game icons allows users to interact with the game|
-|5. Instructions page | 5. The instructions page allows users to read the instructions of the game|
+|5. Instructions | 5. The instructions page allows users to read the instructions of the game|
 |6. Contact form | 6. The contact form allows users to contact the owner of the website for questions or remarks|
 
 ### Features Left to Implement
@@ -193,7 +193,7 @@ The following test scenarios have been carried out:
 2. While the computer is flashing the icons try and click any other icons
 3. Verified that nothing will happen until the computer has finished it's sequence
 
-#### Waiting for icon rotation
+#### Waiting for icon's rotation
 1. Click on Start button and wait for computer's turn to finish
 2. Select an icon and while the icon is rotating click another icon
 3. Verified that nothing will happen until the rotation of each icon has finished
