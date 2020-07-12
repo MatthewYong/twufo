@@ -10,11 +10,11 @@ function sendEmail(messageForm) {
     var template_id = "twufo";
     emailjs.send(service_id, template_id, template_params)
      .then(function(response) {
-        alert("Message Sent!", response)
+        alert("Message Sent!", response);
     }, function(error) {
-        alert("Failed", error)
+        alert("Failed", error);
     });
     messageForm.reset();
     return false;
-};
+}
 
