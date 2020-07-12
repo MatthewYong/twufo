@@ -27,7 +27,7 @@ TWUFO is a memory game build to entertain the user and test the developer's know
 To understand how to develop a game that will attract and entertain the end-user, we need to define the development process of each stage. This can be done by analyzing and breaking down the development process of the project into five planes:
 
 
-### Strategy plane
+### Strategy Plane
 The strategy plane defines the website's objective and the user needs (goals), which can be interpreted as user stories:
 
 #### User Stories
@@ -152,46 +152,57 @@ Testing
 ## Testing
 The following test scenarios have been carried out:
 
-### Navigation test
-- Access and leaving the game page
-    1. On the landing page click on **PLAY**    
-    2. Verified that this will open the game page
-    3. Click on the arrow button
-    4. Verified that the page will return to the index page
+### Navigation Testing
+#### Access and leaving the game page
+1. On the landing page click on **PLAY**    
+2. Verified that this will open the game page
+3. Click on the arrow button
+4. Verified that the page will return to the index page
 
-- Access and leaving the instructions page
-    1. Go to the landing page click on **INSTRUCTIONS** 
-    2. Verified that this will open the instructions page
-    3. Click on the 'X' icon located at the top right corner of the window
-    4. Verified that the page will return to the index page
+#### Access and leaving the instructions page
+1. Go to the landing page click on **INSTRUCTIONS** 
+2. Verified that this will open the instructions page
+3. Click on the 'X' icon located at the top right corner of the window
+4. Verified that the page will return to the index page
 
-- Access and leaving the contact page
-    1. Go to the landing page click on **CONTACT** 
-    2. Verified that this will open the contact page
-    3. Click on the 'X' icon located at the top right corner of the window
-    4. Verified that the page will return to the index page
+#### Access and leaving the contact page
+1. Go to the landing page click on **CONTACT** 
+2. Verified that this will open the contact page
+3. Click on the 'X' icon located at the top right corner of the window
+4. Verified that the page will return to the index page
 
-### Contact Form
-- Sending a message through contact form
-    1. Fill in all the rows with the required information
-    2. Click on send button
-    3. Verified that an alert message will pop up
-    4. Verified that sent message has been received
+### Contact Form Testing
+#### Sending a message through contact form
+1. Fill in all the rows with the required information
+2. Click on send button
+3. Verified that an alert message will pop up
+4. Verified that sent message has been received
 
-- Overwriting variables through argument in function sendEmail
-    1. Fill in all 
+#### Overwriting variable messageForm through argument in function sendEmail
+1. Set up a variable in function sendEmail as below:
+![alt text][contactform]
 
+[contactform]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-contact-messageForm.JPG
+2. Go to contact form and fill in the different details than the variable in step 1
+3. Verified that sent message has been received and that text has been overwritten
 
+### Game Play Testing
+#### Waiting for turn
 
-### Game play
+#### 
+
 
 
 ### Jasmine Testing
+For this project Jasmine has been used for testing the end result of the code. However, Jasmine should have been used as a Test Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
-    - Jasmine testing has been carried out for buttons
-    - Results see below
+#### Button Test
+- To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
+- Jasmine testing has been carried out for buttons
+- The result have all passed and can be found below:
+![alt text][test-result]
 
-
+[test-result]: 
 
 ### Browser and Mobile Devices
 All of the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found in regard to the responsiveness, overflow and the functionality.
