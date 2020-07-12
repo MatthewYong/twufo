@@ -160,8 +160,10 @@ The following test scenarios have been carried out:
 - No errors or warnings were found on index.css, about.css and gallery.css
 - Errors and warnings that were found are related to Bootstrap and can be ignored
 
+### Browser and mobile testing
+- No issues were found on Google Chrome, Mozilla Firefox and Microsoft Edge
 
-
+- No issues were found on any mobile devices
 
 ## Deployment
 ### GitHub Pages
