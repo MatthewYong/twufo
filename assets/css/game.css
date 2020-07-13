@@ -1,44 +1,9 @@
-.game-symbol{
+#level{
     text-align: center;
-}
-
-.game-symbol i{
-    border-radius: 50%;
-    background: rgba(25, 25, 25, 0.6);
-}
-
-.buttons{
-    text-align: center;
-}
-
-.buttons i:hover{
-    color: #00FF7F;
-}
-
-.buttons button:focus{
-    outline: none;
 }
 
 #start:hover, #continue:hover, #retry:hover{
     color: #00FF7F;
-}
-
-.icon-effect{
-    box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753);
-}
-
-/*Activates when icons are clicked*/
-.rotate{
-    transition: 600ms;
-    transform: rotate(360deg);
-}
-
-.hide-button{
-    display: none;
-}
-
-#level{
-    text-align: center;
 }
 
 #start, #continue, #retry, #back, #volume, #mute{
@@ -66,10 +31,50 @@
     color: rgb(52, 116, 189);
 }
 
+.game-symbol{
+    text-align: center;
+}
+
+.game-symbol i{
+    border-radius: 50%;
+    background: rgba(25, 25, 25, 0.6);
+}
+
+.buttons{
+    text-align: center;
+}
+
+.buttons i:hover{
+    color: #00FF7F;
+}
+
+.buttons button:focus{
+    outline: none;
+}
+
+.icon-effect{
+    box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753);
+}
+
+/*Activates when icons are clicked*/
+.rotate{
+    transition: 600ms;
+    transform: rotate(360deg);
+}
+
+.hide-button{
+    display: none;
+}
+
 
 /*Media screen min-width 577px*/
 
 @media only screen and (min-width: 577px){ 
+    #level{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    }   
+
     .game-area{
     padding-top: 4.5rem;
     }
@@ -87,16 +92,16 @@
     .buttons{
         font-size: 2rem;
     }
-
-    #level{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    }   
 }
 
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){ 
+    #level{
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    }
+
     .game-area{
     padding-top: 5rem;
     }
@@ -114,16 +119,17 @@
     .buttons{
         font-size: 1.25rem;
     }
-
-    #level{
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    }
 }
 
 /*Media screen max-height 450px*/
 
 @media only screen and (max-height: 450px){ 
+    #level{
+    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.5rem;
+    }
+
     .game-area{
     padding-top: 1rem;
     }
@@ -140,11 +146,5 @@
 
     .buttons{
         font-size: 1rem;
-    }
-
-    #level{
-    font-size: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.5rem;
     }
 }

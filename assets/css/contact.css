@@ -1,3 +1,22 @@
+
+#send-button{
+    text-transform: uppercase;
+    color: #00FF7F;
+    background-color: rgba(25, 25, 25, 0.8);
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+}
+
+#send-button:hover{
+    background-color: rgba(41, 41, 41, 0.8);
+}
+
+#message{
+    text-align: left;
+    line-height: 1rem;
+    padding-top: 0.1rem;
+}
+
 .contact{
     background-color: rgba(25, 25, 25, 0.8);
     border-radius: 1rem;
@@ -44,41 +63,14 @@
     background-color: rgba(41, 41, 41, 0.8);
 }
 
-#send-button{
-    text-transform: uppercase;
-    color: #00FF7F;
-    background-color: rgba(25, 25, 25, 0.8);
-    border-radius: 0.25rem;
-    padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-}
-
-#send-button:hover{
-    background-color: rgba(41, 41, 41, 0.8);
-}
-
-#message{
-    text-align: left;
-    line-height: 1rem;
-    padding-top: 0.1rem;
-}
-
-
-/*Media screen min-width 768px
-
-@media only screen and (min-width: 768px){
-    .contact{
-        width: 25rem;    
-        height: 32rem; 
-        top: 0;
-        margin-top: 2rem; 
-        margin-bottom: 2rem;  
-    }
-}*/
-
 
 /*Media screen max-width 767px*/
 
 @media only screen and (max-width: 576px){
+    #send-button{
+        font-size: 0.75rem;
+    }
+
     .contact{
         width: 18rem;    
         height: 32rem; 
@@ -100,10 +92,6 @@
     }
 
     .label-header{
-        font-size: 0.75rem;
-    }
-
-    #send-button{
         font-size: 0.75rem;
     }
 }
