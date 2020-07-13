@@ -56,7 +56,6 @@ $("document").ready(function(){
             for (i=0; i < game.computerSequence.length; i++) {  
                 iconFlash(i);
             }
-            console.log(game.computerSequence);
         },1000);
     } 
 
@@ -112,31 +111,26 @@ $("document").ready(function(){
         $("#rocket").click(function() {
             game.playerSequence.push(0);
             iconOne();
-            console.log(game.playerSequence);
         });
 
         $("#astronaut").click(function() {
             game.playerSequence.push(1);        
             iconTwo();
-            console.log(game.playerSequence);
         });
 
         $("#jedi").click(function() {
             game.playerSequence.push(2);
             iconThree();
-            console.log(game.playerSequence);
         });
 
         $("#robot").click(function() {
             game.playerSequence.push(3);
             iconFour();
-            console.log(game.playerSequence);
         });
 
         $("#spock").click(function() {
             game.playerSequence.push(4);
             iconFive();
-            console.log(game.playerSequence);
         });
     }
 
@@ -147,14 +141,12 @@ $("document").ready(function(){
             setTimeout(function() {
                 if (game.computerSequence.toString() == 
                 game.playerSequence.toString()) {
-                    console.log("good");
                     $("#level").html("Good!");
                     $("#continue").removeClass("hide-button");
                     $("#continue").click(function() {
                         cont();
                     });
                 } else {
-                    console.log("wrong");
                     $("#level").html("Wrong!");
                     $("#retry").removeClass("hide-button");
                     $("#retry").click(function() {
