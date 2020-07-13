@@ -92,19 +92,20 @@ $("document").ready(function(){
         },1200*i);
     }
 
-    //When an icon is selected, the integer is pushed into playerSequence array, calls one of the function icon and waits before continue to the next click or function
+    //When an icon is selected, the integer is pushed into playerSequence array, then calls one of the function icon and waits before continue to the next click or function
     function playerTurn() {
         $(".game-symbol").on("click", function() {
             $(this).addClass("rotate");
             $(".game-symbol").off();
             setTimeout(function() {
                 $(".game-symbol").removeClass("rotate");
-                if(game.computerSequence.length != game.playerSequence.length) {
+                /*if(game.computerSequence.length != game.playerSequence.length) {
                     playerTurn();
                 } else {
                     compareSequence();
                     $(".game-symbol").css("cursor", "");                
-                    }
+                    }*/
+                    compareSequence();
             },600);
         });
     
@@ -135,8 +136,31 @@ $("document").ready(function(){
     }
 
     //Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
+let counter = 0;
+    function compareSequence() {        
+        if (game.playerSequence[counter] != game.computerSequence[counter]) {
+            $("#level").html("Wrong!");
+            $("#retry").removeClass("hide-button");
+            $("#retry").click(function() {
+                retry();
+                });            
+        } else {
+            if(game.computerSequence.length == game.playerSequence.length) {
+                $("#level").html("Good!");
+                $("#continue").removeClass("hide-button");
+                $("#continue").click(function() {
+                    cont();
+                    });  
+                counter = 0;          
+                } else {
+                    playerTurn();
+                    counter++;
+                }
+        }
+    }
 
-    function compareSequence() {
+
+/*
         if(game.computerSequence.length == game.playerSequence.length) {
             setTimeout(function() {
                 if (game.computerSequence.toString() == 
@@ -157,7 +181,7 @@ $("document").ready(function(){
                 $(".game-symbol").off("click");
             },100);
         }    
-    }
+    }*/
 
     //When CONTINUE button is selected, increment the level by 1 and reset the button by off function
     function cont() {    
