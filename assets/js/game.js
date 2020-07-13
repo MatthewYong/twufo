@@ -7,7 +7,7 @@ var game = {
     round: 1
 };
 
-//When the DOM has loaded the game is ready to start
+//When the DOM is loaded the game is ready to start
 $("document").ready(function(){
     
     //Audio button to turn on or mute sound
@@ -46,7 +46,7 @@ $("document").ready(function(){
         computerTurn();
     }
 
-    //Randomly chooses a number and pushes into the array of computerSequence then calls function 'iconFlash' 
+    //Computer randomly chooses a number and will push the number into the array of computerSequence 
     function computerTurn() {
         $("#level").text("Level" + " " + game.level);    
         setTimeout(function() {
@@ -92,7 +92,7 @@ $("document").ready(function(){
         },1200*i);
     }
 
-    //When an icon is selected, push to the integer to playerSequence array, calls one of the function icon and waits before continue to the next click or function
+    //When an icon is selected, the integer is pushed into playerSequence array, calls one of the function icon and waits before continue to the next click or function
     function playerTurn() {
         $(".game-symbol").on("click", function() {
             $(this).addClass("rotate");

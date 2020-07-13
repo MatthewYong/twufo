@@ -1,7 +1,7 @@
 # TWUFO | A Memory Game
 Milestone Project 2 - Code Institute 
 
-TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page, a contact form and the actual memory game. The result of this project is an interactive frontend website. 
+TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page, a contact form, and the actual memory game. The result of this project is an interactive frontend website. 
 
 ![alt text][logo]
 
@@ -39,11 +39,11 @@ As a **game player** I want to:
 
 As a **developer** I want to:
 1. Gain more knowledge on JavaScript
-2. Entertain myself and the end-user by playing the game
+2. Entertain me and the end-user by playing the game
 3. Gameplayers to contact me for questions or remarks
 
 ### Scope Plane
-The scope plane defines the features that are and are not possible to include in the website. This will be further in detail explained in the next chapter. A summary of the included and not included features are:
+The scope plane defines the features that are and are not possible to include on the website. This will be further in detail explained in the next chapter. A summary of the included and not included features are:
 
 | Features (included) | Future features (not included)|
 | :------------- | :---------- |
@@ -90,17 +90,17 @@ Contrast ratio: 9.98 | A high ratio to express the visibility of the text (sourc
 
 
 ## Features
-A summary of the features were described in the scope plane. This chapter will explain what the purpose is of each feature and what will left to implement for the future.
+A summary of the features was described in the scope plane. This chapter will explain what the purpose is of each feature and what will be left to implement for the future.
 
 ### Existing Features
 | Features (included) | Explanation|
 | :------------- | :---------- |
-|1. Start button | 1. The start button allows users to to start the game|
+|1. Start button | 1. The start button allows users to start the game|
 |2. Back button | 2. The back button allows users to return to the landing page|
 |3. Audio button | 3. The audio button let users to control the sound of the game|
 |4. Game icons | 4. The five game icons allows users to interact with the game|
 |5. Instructions | 5. The instructions page allows users to read the instructions of the game|
-|6. Contact form | 6. The contact form allows users to contact the owner of the website for questions or remarks|
+|6. Contact form | 6. The contact form allow users to contact the owner of the website for questions or remarks|
 
 ### Features Left to Implement
 | Features (not included) | Explanation|
@@ -116,7 +116,7 @@ The following technologies have been used to achieve this project:
 Resources
 - [HTML](https://www.w3.org/TR/html52/) is used as the main writing language of this project
 - [CSS](https://www.w3.org/Style/CSS/Overview.en.html) is used for styling the HTML text
-- [JavaScript](https://www.javascript.com/) is used for coding the user interaction, the contact form and the Jasmine testing framework
+- [JavaScript](https://www.javascript.com/) is used for coding the user interaction, the contact form, and the Jasmine testing framework
 
 Styling
 - [FontAwesome](https://fontawesome.com/) is used to improve the visual design of the website and is used for the main icons in the game
@@ -191,7 +191,7 @@ The following test scenarios have been carried out:
 #### Waiting for player's turn
 1. Click on Start button to start the game
 2. While the computer is flashing the icons try and click any other icons
-3. Verified that nothing will happen until the computer has finished it's sequence
+3. Verified that nothing will happen until the computer has finished its sequence
 
 #### Waiting for icon's rotation
 1. Click on Start button and wait for computer's turn to finish
@@ -199,7 +199,7 @@ The following test scenarios have been carried out:
 3. Verified that nothing will happen until the rotation of each icon has finished
 
 ### Jasmine Testing
-For this project Jasmine has been used for testing the end result of the code. However, Jasmine should have been used as a Test Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
+For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
 #### Button Test
 - To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
@@ -210,7 +210,7 @@ For this project Jasmine has been used for testing the end result of the code. H
 [result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-jasmine-results.JPG
 
 ### Browser and Mobile Devices
-All of the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found in regard to the responsiveness, overflow and the functionality.
+All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality.
 
 #### Browser Testing
 - Google Chrome - version 83.0.4103.116 (64-bit)
@@ -292,7 +292,7 @@ The completion of this project could not have been possible without support and 
 - Tutors from Code Institute, for guiding me through some tough codes in JavaScript
 - Code Institute, for the valuable lessons through videos and exercises
 - Stack Overflow, for giving me code support 
-- Slack community, for reviewing my project, giving me new ideas and code support. In particular Anna_ci for her tips on how to deploy the website.
+- Slack community, for reviewing my project, giving me new ideas and code support. Mainly Anna_ci for her tips on how to deploy the website.
 
 ## Disclaimer
 This website is for educational purposes only. All content and images are illustrative.
