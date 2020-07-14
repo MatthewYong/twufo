@@ -4,7 +4,8 @@ var game = {
     playerSequence: [],
     runningSequence: [],
     level: 0,
-    round: 1
+    round: 1,
+    counter: 0
 };
 
 //When the DOM is loaded the game is ready to start
@@ -43,6 +44,7 @@ $("document").ready(function(){
         game.playerSequence = [];
         game.runningSequence = [];
         game.level = 1;
+        game.counter = 0;
         computerTurn();
     }
 
@@ -135,10 +137,10 @@ $("document").ready(function(){
         });
     }
 
-    //Compare if array length of playerSequence and computerSequence are equal. If equal, check if values are in the same order. If correct, continue to next 'round' through CONTINUE button. If not equal, then restart new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
-let counter = 0;
+    //Compare if the each value of the playerSequence array and computerSequence array are equal. If equal, then check if the array length is equal. If array length is equal as well, then continue to next 'round' through CONTINUE button. If not equal, then restart a new game through RETRY button. Code derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
+
     function compareSequence() {        
-        if (game.playerSequence[counter] != game.computerSequence[counter]) {
+        if (game.playerSequence[game.counter] != game.computerSequence[game.counter]) {
             $("#level").html("Wrong!");
             $("#retry").removeClass("hide-button");
             $("#retry").click(function() {
@@ -151,11 +153,11 @@ let counter = 0;
                 $("#continue").click(function() {
                     cont();
                     });  
-                counter = 0;          
-                } else {
-                    playerTurn();
-                    counter++;
-                }
+                game.counter = 0;          
+            } else {
+                 playerTurn();
+                 game.counter++;
+            }
         }
     }
 
