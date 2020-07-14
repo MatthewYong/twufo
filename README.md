@@ -153,9 +153,7 @@ Testing
 
 
 ## Testing
-The test procedures and the key issues of the test are written in the file [TEST.md](https://github.com/MatthewYong/twufo/blob/master/TESTS.md).
-
-
+The test procedures and the key issues of the tests are written in the file [TEST.md](https://github.com/MatthewYong/twufo/blob/master/TESTS.md).
 
 
 ## Deployment

@@ -5,15 +5,20 @@
 
 
 ## System Based Testing
+### Jasmine Testing
+For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project.  
+Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
+#### Button Test
+- To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
+- Jasmine testing has been carried out specifically for buttons
+- The results have all passed and can be found below:
+![alt text][result]
+
+[result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-jasmine-results.JPG
 
 
 ## Manual Testing
-
-
-
-## Code Validation
-
 The following test scenarios have been carried out:
 
 ### Navigation Testing
@@ -67,17 +72,6 @@ The following test scenarios have been carried out:
 2. At level three select a wrong icon on the second try
 3. Verified that the game play has stopped while the player array length has not been fully pushed
 
-### Jasmine Testing
-For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project.  
-Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
-
-#### Button Test
-- To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
-- Jasmine testing has been carried out specifically for buttons
-- The results have all passed and can be found below:
-![alt text][result]
-
-[result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-jasmine-results.JPG
 
 ### Browser and Mobile Devices
 All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality.
@@ -94,7 +88,8 @@ All the test scenarios have been carried out in the browsers and mobile devices 
 - iPhone 5/SE/6/7/8/Plus
 - iPad (Pro)
 
-## Key Issues
+
+## Key Issues and Code Validation
 ### W3C Markup Validator
 - No errors or warnings were found on index.html, game.html, instructions.html and contact.html
 
