@@ -36,6 +36,9 @@
 /*Media screen min-width 768px*/
 
 @media only screen and (min-width: 768px){
+    .logo{
+        font-size: 10rem;
+    }
     .menu{
         width: 30rem;    
         height: 15rem;    
@@ -46,6 +49,10 @@
 /*Media screen max-width 767px*/
 
 @media only screen and (max-width: 767px){
+    .logo{
+        font-size: 2rem;
+    }
+
     .menu{
         margin-top: 5rem;  
         width: 30rem;    
@@ -56,6 +63,10 @@
 /*Media screen max-width 576px*/
 
 @media only screen and (max-width: 576px){
+    .logo{
+        font-size: 2rem;
+    }
+
     .menu{
         font-size: 1.5rem;
         margin-top: 5rem;  
@@ -67,6 +78,10 @@
 /*Media screen max-height 450px*/
 
 @media only screen and (max-height: 450px){
+    .logo{
+        font-size: 1rem;
+    }
+
     .menu{
         font-size: 1.5rem;
         margin-top: 0.2rem;  
