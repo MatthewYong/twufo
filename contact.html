@@ -38,21 +38,21 @@
 			<form onsubmit="return sendEmail(this);">
 				<label for="fname" class="label-header">First Name*</label>
 				<div>
-					<input class="text-input" type="text" name="first_name" id="fname" required>
+					<input class="text-input" type="text" name="first_name" id="fname" aria-label="first name" required>
                 </div>
 					<label for="lname" class="label-header">Last Name*</label>
 				<div>
-					<input class="text-input" type="text" name="last_name" id="lname" required>
+					<input class="text-input" type="text" name="last_name" id="lname" aria-label="last name" required>
                 </div>
 					<label for="email" class="label-header">Email Address*</label>
 				<div>
-					<input class="text-input" type="email" name="email_address" id="email" required>
+					<input class="text-input" type="email" name="email_address" id="email" aria-label="email" required>
                 </div>
-					<label for="message" class="label-header">Message</label>
+					<label for="message" class="label-header" aria-label="message">Message</label>
 				<div>
 					<textarea class="text-input sm-font" name="message" rows="6" cols="10" id="message" required></textarea>
 				</div>
-				<input id="send-button" type="submit" value="Send">
+				<input id="send-button" type="submit" value="Send" aria-label="send">
 			</form>
 		</div>
 	</div>
