@@ -198,6 +198,11 @@ The following test scenarios have been carried out:
 2. Select an icon and while the icon is rotating click another icon
 3. Verified that nothing will happen until the rotation of each icon has finished
 
+#### Error on any player sequence
+1. Click on Start button and succesfully play to the third level
+2. At level three select a wrong icon on the second try
+3. Verified that the game play has stopped while the player array length has not been fully pushed
+
 ### Jasmine Testing
 For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
