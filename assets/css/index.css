@@ -64,12 +64,12 @@
 
 @media only screen and (max-width: 576px){
     .logo{
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     .menu{
         font-size: 1.5rem;
-        margin-top: 5rem;  
+        margin-top: 4rem;  
         width: 18rem;    
         height: 12rem;    
     }
@@ -79,7 +79,7 @@
 
 @media only screen and (max-height: 450px){
     .logo{
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     .menu{
