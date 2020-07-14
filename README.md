@@ -1,6 +1,4 @@
 # TWUFO | A Memory Game
-Milestone Project 2 - Code Institute 
-
 TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page, a contact form, and the actual memory game. The result of this project is an interactive frontend website. 
 
 ![alt text][logo]
