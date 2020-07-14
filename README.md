@@ -1,5 +1,6 @@
 # TWUFO | A Memory Game
-TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game. The website contains an instruction page, a contact form, and the actual memory game. The result of this project is an interactive frontend website. 
+TWUFO is a memory game build to entertain the user and test the developer's knowledge of JavaScript. The theme of the website is 'space', which will be visible in various aspect of the game.  
+The website contains an instruction page, a contact form, and the actual memory game. The result of this project is an interactive frontend website. 
 
 ![alt text][logo]
 
@@ -41,7 +42,8 @@ As a **developer** I want to:
 3. Gameplayers to contact me for questions or remarks
 
 ### Scope Plane
-The scope plane defines the features that are and are not possible to include on the website. This will be further in detail explained in the next chapter. A summary of the included and not included features are:
+The scope plane defines the features that are and are not possible to include on the website.  
+This will be further in detail explained in the next chapter. A summary of the included and not included features are:
 
 | Features (included) | Future features (not included)|
 | :------------- | :---------- |
@@ -52,7 +54,8 @@ The scope plane defines the features that are and are not possible to include on
 |5. Contact form |  
 
 ### Structure Plane
-The structure plane defines the information architecture and interaction design with the user. The following definitions has been used for this website:
+The structure plane defines the information architecture and interaction design with the user.  
+The following definitions has been used for this website:
 
 - First impression of the website needs to be simple and clear as possible
 - No more than two clicks are required for the user to reach a page
@@ -64,7 +67,8 @@ The structure plane defines the information architecture and interaction design 
 
 
 ### Skeleton Plane
-The skeleton plane defines a basic visual design of the website through, for example, a wireframe. The wireframes for this project are made with Balsamiq can be downloaded from the following link:
+The skeleton plane defines a basic visual design of the website through, for example, a wireframe.  
+The wireframes for this project are made with Balsamiq can be downloaded from the following link:
 
 - [Wireframe - Desktop version](https://github.com/MatthewYong/twufo/raw/master/readme/wireframes/Wireframe%20-%20Desktop.pdf)
 - [Wireframe - Tablet version](https://github.com/MatthewYong/twufo/raw/master/readme/wireframes/Wireframe%20-%20Tablet.pdf)
@@ -77,7 +81,8 @@ Below you can find an example of a wireframe of the landing page.
 [wireframe]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-skeletonplane.jpg
 
 ### Surface Plane
-The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to encourage users to play the game. The website has a 'space' theme and must give the user a futuristic experience. The following design style has been used:
+The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to encourage users to play the game. The website has a 'space' theme and must give the user a futuristic experience.  
+The following design style has been used:
 
 | Design Style | Design Choice|
 | :------------- | :---------- |
@@ -202,7 +207,8 @@ The following test scenarios have been carried out:
 3. Verified that the game play has stopped while the player array length has not been fully pushed
 
 ### Jasmine Testing
-For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project. Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
+For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project.  
+Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
 #### Button Test
 - To execute the test in twufo-jasmine-testing.html the JQuery 'document.ready' function in game.js needs to be temporarily removed
@@ -295,7 +301,7 @@ The completion of this project could not have been possible without support and 
 - Tutors from Code Institute, for guiding me through some tough codes in JavaScript
 - Code Institute, for the valuable lessons through videos and exercises
 - Stack Overflow, for giving me code support 
-- Slack community, for reviewing my project, giving me new ideas and code support. Mainly Anna_ci for her tips on how to deploy the website.
+- Slack community giving me new ideas and code support. Mainly Anna_ci for her tips on how to deploy the website and Paul F_alumni for reviewing my project
 
 ## Disclaimer
 This website is for educational purposes only. All content and images are illustrative.
