@@ -1,7 +1,14 @@
 # TWUFO | Testing
 
-## Introduction
 
+## Table of Contents
+- [System Based Testing](#system-based-testing)
+- [Manual Testing](#manual-testing)
+    * [Navigation Testing](#navigation-testing)
+    * [Contact Form Testing](#contact-form-testing)
+    * [Game Play Testing](#game-play-testing)
+    * [Browser and Mobile Devices Testing](#browser-and-mobile-devices-testing)
+- [Key Issues and Code Validation](#key-issues-and-code-validation)
 
 
 ## System Based Testing
@@ -73,7 +80,7 @@ The following test scenarios have been carried out:
 3. Verified that the game play has stopped while the player array length has not been fully pushed
 
 
-### Browser and Mobile Devices
+### Browser and Mobile Devices Testing
 All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality.
 
 #### Browser Testing
