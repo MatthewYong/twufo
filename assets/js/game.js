@@ -101,13 +101,8 @@ $("document").ready(function(){
             $(".game-symbol").off();
             setTimeout(function() {
                 $(".game-symbol").removeClass("rotate");
-                /*if(game.computerSequence.length != game.playerSequence.length) {
-                    playerTurn();
-                } else {
-                    compareSequence();
-                    $(".game-symbol").css("cursor", "");                
-                    }*/
-                    compareSequence();
+                $(".game-symbol").css("cursor", "");               
+                compareSequence();
             },600);
         });
     
@@ -155,8 +150,9 @@ $("document").ready(function(){
                     });  
                 game.counter = 0;          
             } else {
-                 playerTurn();
-                 game.counter++;
+                $(".game-symbol").css("cursor", "pointer");
+                playerTurn();
+                game.counter++;
             }
         }
     }
