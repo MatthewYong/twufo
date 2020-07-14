@@ -32,7 +32,7 @@ $("document").ready(function () {
         $("audio").prop("muted", false);
     }
 
-    //Start button starts the game
+    //Start button will start the game
     $("#start").click(function () {
         newGame();
     });
