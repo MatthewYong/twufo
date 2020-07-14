@@ -157,30 +157,6 @@ $("document").ready(function(){
         }
     }
 
-
-/*
-        if(game.computerSequence.length == game.playerSequence.length) {
-            setTimeout(function() {
-                if (game.computerSequence.toString() == 
-                game.playerSequence.toString()) {
-                    $("#level").html("Good!");
-                    $("#continue").removeClass("hide-button");
-                    $("#continue").click(function() {
-                        cont();
-                    });
-                } else {
-                    $("#level").html("Wrong!");
-                    $("#retry").removeClass("hide-button");
-                    $("#retry").click(function() {
-                        retry();
-                    });
-                }
-                //This prevents the player from clicking while the computerSequence is running
-                $(".game-symbol").off("click");
-            },100);
-        }    
-    }*/
-
     //When CONTINUE button is selected, increment the level by 1 and reset the button by off function
     function cont() {    
         $("#continue").addClass("hide-button");
