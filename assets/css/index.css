@@ -37,7 +37,7 @@
 
 @media only screen and (min-width: 768px){
     .logo{
-        font-size: 10rem;
+        font-size: 6rem;
     }
     .menu{
         width: 30rem;    
@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 767px){
     .logo{
-        font-size: 2rem;
+        font-size: 5rem;
     }
 
     .menu{
