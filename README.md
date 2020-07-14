@@ -4,7 +4,7 @@ The website contains an instruction page, a contact form, and the actual memory 
 
 ![alt text][logo]
 
-[logo]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-landing-device.png
+[logo]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-landing-device.png
 
 ## Table of Contents
 - [UX](#ux)
@@ -63,7 +63,7 @@ The following definitions has been used for this website:
 
 ![alt text][hubspoke]
 
-[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-structureplane.JPG
+[hubspoke]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-wireframe-structureplane.JPG
 
 
 ### Skeleton Plane
@@ -78,7 +78,7 @@ Below you can find an example of a wireframe of the landing page.
 
 ![alt text][wireframe]
 
-[wireframe]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-wireframe-skeletonplane.jpg
+[wireframe]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-wireframe-skeletonplane.jpg
 
 ### Surface Plane
 The surface plane is the final plane in the design process and defines the appearance of the website. This website needs to encourage users to play the game. The website has a 'space' theme and must give the user a futuristic experience.  
@@ -186,7 +186,7 @@ The following test scenarios have been carried out:
 
 ![alt text][contactform]
 
-[contactform]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-contact-messageForm.JPG
+[contactform]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-contact-messageForm.JPG
 2. Go to contact form and fill in the different details than the variable in step 1
 3. Verified that sent message has been received and that text has been overwritten
 
@@ -216,7 +216,7 @@ Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfort
 - The results have all passed and can be found below:
 ![alt text][result]
 
-[result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-jasmine-results.JPG
+[result]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-jasmine-results.JPG
 
 ### Browser and Mobile Devices
 All the test scenarios have been carried out in the browsers and mobile devices as listed below. No problems were found regarding the responsiveness, overflow and the functionality.
@@ -262,7 +262,7 @@ To publish the website, the following steps needs to be taken:
 
 ![alt text][deploy]
 
-[deploy]: https://raw.githubusercontent.com/MatthewYong/twufo/master/readme/images/image-deployment.JPG
+[deploy]: https://raw.githubusercontent.com/MatthewYong/twufo/master/assets/images/readme-images/image-deployment.JPG
 
 For more information on how to deploy a website on GitHub, please visit [here](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
