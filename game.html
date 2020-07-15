@@ -25,6 +25,7 @@
 <body>
     <div class="container game-area">
         <div class="row">
+            <!--Interactive icons of the game-->
             <div class="col-4 game-symbol" id="rocket">
                 <audio id="audioRocket" src="assets/audio/sound-rocket.mp3"></audio>
                 <i class="fas fa-rocket icon-rocket"></i>
@@ -68,9 +69,11 @@
             </div>        
         </div>
     </div>
+    <!--Game level indicator-->
     <div class="lg-font" id="level">Level 0</div>
     <div class="container">
         <div class="row buttons">
+            <!--Button start, continue or restart the game-->
             <div class="col-3">
                 <button onclick="location.href = 'index.html'" id="back">
                 <i class="fas fa-arrow-left"></i>
@@ -85,6 +88,7 @@
                 </div>       
             </div>
             <div class="col-3">
+                <!--Button to control the audio of the game-->
                 <button id="volume">
                 <i class="fas fa-volume-up" aria-hidden="true"></i>
                 <span class="sr-only">Audio</span>    
