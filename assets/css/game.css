@@ -6,11 +6,13 @@
     color: #00FF7F;
 }
 
+/*All buttons in the game*/
 #start, #continue, #retry, #back, #volume, #mute{
     color: rgb(64, 175, 240);
     background-color: rgba(25, 25, 25, 0.8);
 }
 
+/*Five icons in the game*/
 #rocket{
     color: rgb(218, 167, 26);
 }
@@ -52,11 +54,12 @@
     outline: none;
 }
 
+/*Add effect to icon when clicked by player*/
 .icon-effect{
     box-shadow: 0 0 1rem 1rem rgba(0, 255, 128, 0.753);
 }
 
-/*Activates when icons are clicked*/
+/*Activates when icons are clicked by player*/
 .rotate{
     transition: 600ms;
     transform: rotate(360deg);
