@@ -88,7 +88,7 @@ The following design style has been used:
 | :------------- | :---------- |
 Font: Orbitron | A clear font to give the website a futuristic look|
 Text color: #00FF7F | A green bright 'alienish' colour |
-Background: Earth from Space | To be in line with the space theme |
+Background: Earth from Space | To enhance the space theme |
 Contrast ratio: 9.98 | A high ratio to express the visibility of the text (source: contrast-ratio.com)|
 
 
