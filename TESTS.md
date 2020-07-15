@@ -13,7 +13,7 @@
 
 ## System Based Testing
 ### Jasmine Testing
-For this project Jasmine has been used for testing the result of the code. However, Jasmine should have been used as a Test-Driven Development from the start of this project.  
+For this project, Jasmine has been used for testing the result of the code. However, Jasmine should have been used from the start of the project, as a Test-Driven Development.  
 Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfortunately not possible.
 
 #### Button Test
@@ -26,7 +26,8 @@ Due to my basic knowledge of JavaScript, and Jasmine in general, this was unfort
 
 
 ## Manual Testing
-The following test scenarios have been carried out:
+Manual tests have been done throughout the development of the project.  
+The following test scenarios confirms that the website is behaving accordingly, and that bugs have been taken care of:
 
 ### Navigation Testing
 #### Access and leaving the game page
@@ -110,5 +111,4 @@ All the test scenarios have been carried out in the browsers and mobile devices 
 
 ### Browser and mobile testing
 - No issues were found on Google Chrome, Mozilla Firefox, Microsoft Edge and Internet Explorer
-
 - No issues were found on any mobile devices

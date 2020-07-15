@@ -132,7 +132,7 @@ $("document").ready(function () {
         });
     }
 
-    //Compare if the each value of the playerSequence array and computerSequence array are equal. If equal, then check if the array length is equal. If array length is equal as well, then continue to next 'round' through CONTINUE button. If the value of any comparison is not equal, then a new game will restart through RETRY button. Code inspired from mentor and derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
+    //Compare if the each value of the playerSequence array and computerSequence array are equal. If equal, then check if the array length is equal. If array length is equal as well, then continue to next 'round' through CONTINUE button. If the value of any comparison is not equal, then a new game will restart through RETRY button. Code inspired from my mentor Gerry McBride and derived from KodeBase https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s
 
     function compareSequence() {
         if (game.playerSequence[game.counter] != game.computerSequence[game.counter]) {
