@@ -193,7 +193,7 @@ To make a clone of the website and work locally, the following steps needs to be
 The following codes were inspired or taken from:
 - [YouTube](https://www.youtube.com/watch?v=n_ec3eowFLQ&t=2706s): How to start coding a memory game in JavaScript
 
-- [YouTube](https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s): Comparison of Player and Computer sequence. Idea used in file game.js on code line 142
+- [YouTube](https://www.youtube.com/watch?v=xxDqhU-0mek&t=257s): Comparison of Player and Computer sequence. Idea used in file game.js on code line 138
 
 - [Geeksforgeeks](https://www.geeksforgeeks.org/how-to-add-a-delay-in-a-javascript-loop/): Adding a delay between flashing icons. Idea used in file game.js on code line 60
 

@@ -1,4 +1,4 @@
-//Variables
+//Variables that are used throughout the game
 var game = {
     computerSequence: [],
     playerSequence: [],
@@ -8,10 +8,10 @@ var game = {
     counter: 0
 };
 
-//When the DOM is loaded the game is ready to start
+//When the DOM is loaded, the game is ready to start
 $("document").ready(function () {
 
-    //Audio button to turn on or mute sound
+    //Audio button to turn on or mute the sound
     $("#volume").click(function () {
         volumeOff();
     });
